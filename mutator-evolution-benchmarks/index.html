@@ -1,0 +1,2429 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A visual gallery of the 16 benchmark families proposed for Mutator Evolution v0.">
+  <meta name="color-scheme" content="light dark">
+  <title>Mutator Evolution v0: Benchmark Gallery</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --page: #f4f5f2;
+      --surface: #ffffff;
+      --surface-subtle: #f8f8f5;
+      --ink: #171a18;
+      --muted: #626962;
+      --line: #d9ddd7;
+      --line-strong: #bfc6bd;
+      --accent: #315c49;
+      --accent-soft: #dcebe3;
+      --train: #176d52;
+      --train-soft: #d9eee5;
+      --validation: #8a5a10;
+      --validation-soft: #f7e7c4;
+      --test: #6f4ba8;
+      --test-soft: #ece3f8;
+      --danger: #b94a45;
+      --blue: #3e6fa6;
+      --gold: #b37b24;
+      --shadow: 0 14px 38px rgba(28, 38, 31, 0.08);
+      --radius: 20px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --page: #111412;
+        --surface: #191d1a;
+        --surface-subtle: #202521;
+        --ink: #edf1ed;
+        --muted: #abb3ac;
+        --line: #333a34;
+        --line-strong: #4a534b;
+        --accent: #90c7ab;
+        --accent-soft: #233e31;
+        --train: #88cdb0;
+        --train-soft: #1d3a2e;
+        --validation: #e0b56b;
+        --validation-soft: #46351c;
+        --test: #c4a7ee;
+        --test-soft: #35284a;
+        --danger: #ef8c86;
+        --blue: #88add7;
+        --gold: #e0b56b;
+        --shadow: 0 16px 42px rgba(0, 0, 0, 0.28);
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 14% -10%, color-mix(in srgb, var(--train-soft) 60%, transparent) 0, transparent 36rem),
+        radial-gradient(circle at 90% 4%, color-mix(in srgb, var(--test-soft) 55%, transparent) 0, transparent 34rem),
+        var(--page);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+
+    a { color: inherit; }
+
+    a:focus-visible,
+    button:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid color-mix(in srgb, var(--accent) 55%, transparent);
+      outline-offset: 3px;
+    }
+
+    .page-shell {
+      width: min(1240px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 72px 0 84px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 32px;
+      align-items: end;
+      margin-bottom: 34px;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--accent);
+      font-size: 0.76rem;
+      font-weight: 760;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 820px;
+      margin: 0;
+      font-size: clamp(2.3rem, 5vw, 4.65rem);
+      font-weight: 690;
+      letter-spacing: -0.055em;
+      line-height: 0.98;
+    }
+
+    .lede {
+      max-width: 720px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 1.4vw, 1.14rem);
+    }
+
+    .split-summary {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(78px, 1fr));
+      gap: 8px;
+      min-width: 292px;
+    }
+
+    .summary-cell {
+      padding: 14px 12px 12px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: color-mix(in srgb, var(--surface) 88%, transparent);
+      text-align: center;
+    }
+
+    .summary-cell strong {
+      display: block;
+      font-size: 1.35rem;
+      line-height: 1;
+    }
+
+    .summary-cell span {
+      display: block;
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 0.72rem;
+      font-weight: 720;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .toolbar {
+      position: sticky;
+      top: 12px;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 28px;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: color-mix(in srgb, var(--surface) 88%, transparent);
+      box-shadow: 0 8px 28px rgba(17, 22, 18, 0.06);
+      backdrop-filter: blur(16px);
+    }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .filter-button {
+      min-height: 38px;
+      padding: 8px 14px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-size: 0.88rem;
+      font-weight: 680;
+      cursor: pointer;
+    }
+
+    .filter-button:hover { color: var(--ink); }
+
+    .filter-button[aria-pressed="true"] {
+      border-color: var(--line);
+      background: var(--surface-subtle);
+      color: var(--ink);
+      box-shadow: 0 2px 8px rgba(20, 28, 22, 0.06);
+    }
+
+    .showing-count {
+      flex: 0 0 auto;
+      margin: 0 8px 0 0;
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .benchmark-card {
+      display: flex;
+      min-width: 0;
+      flex-direction: column;
+      overflow: clip;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .benchmark-card[hidden] { display: none; }
+
+    .card-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(180px, 220px);
+      gap: 20px;
+      padding: 22px 24px 18px;
+      align-items: start;
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .split-tag,
+    .family-tag,
+    .adaptation-tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      border-radius: 999px;
+      font-size: 0.69rem;
+      font-weight: 750;
+      letter-spacing: 0.055em;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .split-tag { padding: 6px 9px; }
+    .family-tag { color: var(--muted); }
+
+    .benchmark-card[data-split="Train"] .split-tag {
+      background: var(--train-soft);
+      color: var(--train);
+    }
+
+    .benchmark-card[data-split="Validation"] .split-tag {
+      background: var(--validation-soft);
+      color: var(--validation);
+    }
+
+    .benchmark-card[data-split="Test"] .split-tag {
+      background: var(--test-soft);
+      color: var(--test);
+    }
+
+    .card-title {
+      margin: 0;
+      font-size: clamp(1.3rem, 2.1vw, 1.72rem);
+      font-weight: 680;
+      letter-spacing: -0.03em;
+      line-height: 1.16;
+    }
+
+    .objective {
+      display: grid;
+      gap: 4px;
+      align-self: start;
+      min-height: 62px;
+      padding: 10px 13px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--surface-subtle);
+      color: var(--ink);
+      text-align: left;
+    }
+
+    .objective-direction {
+      color: var(--muted);
+      font-size: 0.68rem;
+      font-weight: 760;
+      letter-spacing: 0.08em;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .objective math {
+      display: block;
+      min-height: 1.55rem;
+      overflow: visible;
+      font-family: "STIX Two Math", "Cambria Math", "Latin Modern Math", serif;
+      font-size: 1.05rem;
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+
+    math.math-inline {
+      display: inline-block;
+      margin: 0 0.12em;
+      font-family: "STIX Two Math", "Cambria Math", "Latin Modern Math", serif;
+      font-size: 1.06em;
+      vertical-align: -0.16em;
+    }
+
+    .visual-figure {
+      margin: 0 16px;
+    }
+
+    .visual-wrap {
+      position: relative;
+      height: 324px;
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background:
+        linear-gradient(135deg, color-mix(in srgb, var(--surface-subtle) 84%, var(--accent-soft)) 0%, var(--surface-subtle) 74%);
+    }
+
+    .visual-wrap canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .visual-overlay {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+
+    .visual-copy {
+      position: absolute;
+      color: var(--ink);
+      font-size: 0.78rem;
+      line-height: 1.3;
+    }
+
+    .visual-copy math {
+      font-family: "STIX Two Math", "Cambria Math", "Latin Modern Math", serif;
+    }
+
+    .visual-kicker {
+      display: block;
+      color: var(--muted);
+      font-size: 0.67rem;
+      font-weight: 760;
+      letter-spacing: 0.055em;
+      line-height: 1.1;
+      text-transform: uppercase;
+    }
+
+    .visual-status {
+      display: flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 6px 11px;
+      border-radius: 8px;
+      background: var(--train-soft);
+      color: var(--train);
+      font-size: 0.71rem;
+      font-weight: 760;
+      letter-spacing: 0.035em;
+      white-space: nowrap;
+      text-transform: uppercase;
+    }
+
+    .visual-rule {
+      height: 1px;
+      border: 0;
+      background: var(--line);
+    }
+
+    .circle-copy {
+      top: 28px;
+      right: 28px;
+      left: calc(46% + 62px);
+    }
+
+    .circle-objective { margin-top: 20px; }
+
+    .circle-objective math {
+      display: block;
+      margin-top: 6px;
+      color: var(--train);
+      font-size: 1.12rem;
+    }
+
+    .circle-copy .visual-rule { margin: 18px 0; }
+
+    .constraint-list {
+      display: grid;
+      gap: 7px;
+      margin-top: 9px;
+    }
+
+    .constraint-list math {
+      display: block;
+      font-size: 0.86rem;
+    }
+
+    .beat-copy {
+      top: 25px;
+      right: 28px;
+      left: 58%;
+    }
+
+    .pmf-axis-label {
+      position: absolute;
+      color: var(--ink);
+      line-height: 1;
+    }
+
+    .pmf-axis-label math { font-size: 1rem; }
+    .pmf-y-label { top: 18px; left: 34px; }
+    .pmf-x-label { top: 250px; left: calc(min(50%, 290px) + 46px); color: var(--muted); }
+
+    .draw-title {
+      margin-bottom: 10px;
+      color: var(--muted);
+      font-size: 0.72rem;
+      font-weight: 690;
+    }
+
+    .draw-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 9px 12px;
+    }
+
+    .draw-token {
+      display: grid;
+      min-height: 39px;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: color-mix(in srgb, var(--surface) 90%, transparent);
+    }
+
+    .draw-token:last-child { border-color: var(--train); }
+
+    .draw-token math {
+      font-size: 1.02rem;
+    }
+
+    .draw-token:last-child math { color: var(--train); }
+
+    .event-panel {
+      margin-top: 14px;
+      padding: 11px 12px 10px;
+      border: 1px solid var(--line);
+      border-radius: 11px;
+      background: color-mix(in srgb, var(--surface) 90%, transparent);
+      text-align: center;
+    }
+
+    .event-panel .visual-kicker { text-align: left; }
+
+    .event-panel math {
+      display: block;
+      margin: 8px auto 5px;
+      color: var(--train);
+      font-size: 0.94rem;
+    }
+
+    .toy-value {
+      color: var(--muted);
+      font-size: 0.69rem;
+      font-weight: 620;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .determinant-copy {
+      top: 34px;
+      right: 28px;
+      left: calc(47% + 60px);
+    }
+
+    .determinant-copy .visual-status {
+      background: var(--validation-soft);
+      color: var(--validation);
+    }
+
+    .matrix-domain {
+      display: grid;
+      gap: 4px;
+      margin: 15px 0 14px;
+    }
+
+    .matrix-domain math { font-size: 1rem; }
+    .determinant-copy .visual-rule { margin: 0 0 14px; }
+
+    .det-objective math {
+      display: block;
+      margin-top: 5px;
+      color: var(--validation);
+      font-size: 1.35rem;
+    }
+
+    .sign-key {
+      display: flex;
+      gap: 22px;
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.72rem;
+      font-weight: 650;
+    }
+
+    .sign-key span {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .sign-swatch {
+      width: 14px;
+      height: 14px;
+      border-radius: 3px;
+      background: var(--train);
+    }
+
+    .sign-key span:last-child .sign-swatch { background: var(--test); }
+
+    .det-scorer {
+      margin-top: 16px;
+      font-size: 0.76rem;
+    }
+
+    .det-scorer strong {
+      display: block;
+      margin: 5px 0 2px;
+      color: var(--ink);
+    }
+
+    .det-scorer span { color: var(--muted); }
+
+    .ast-overlay {
+      position: absolute;
+      top: 18px;
+      right: 30%;
+      left: 32%;
+      height: 190px;
+      color: var(--ink);
+      text-align: center;
+    }
+
+    .ast-title {
+      display: block;
+      color: var(--test);
+      font-size: 0.72rem;
+      font-weight: 760;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .ast-connectors {
+      position: absolute;
+      inset: 20px 0 0;
+      width: 100%;
+      height: 165px;
+      overflow: visible;
+      stroke: var(--line-strong);
+      stroke-width: 1.2;
+    }
+
+    .ast-node {
+      position: absolute;
+      display: grid;
+      min-height: 30px;
+      place-items: center;
+      padding: 4px 8px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: color-mix(in srgb, var(--surface) 94%, transparent);
+    }
+
+    .ast-node math { font-size: 0.9rem; }
+    .ast-root { top: 34px; left: 50%; width: 50px; border-color: var(--test); transform: translateX(-50%); }
+    .ast-term { top: 89px; left: 1%; width: 78px; }
+    .ast-add { top: 89px; right: 8%; width: 48px; }
+    .ast-sin { top: 144px; right: 28%; width: 65px; }
+    .ast-constant { top: 144px; right: 0; width: 54px; }
+    .ast-compact-expression { display: none; }
+
+    .schematic-note {
+      display: block;
+      margin: 7px 4px 0;
+      padding: 0;
+      color: var(--muted);
+      font-size: 0.74rem;
+      font-weight: 570;
+      line-height: 1.35;
+      text-align: right;
+    }
+
+    .card-copy { padding: 20px 24px 22px; }
+
+    .caption {
+      margin: 0 0 18px;
+      color: var(--ink);
+      font-size: 0.96rem;
+    }
+
+    .artifact-grid {
+      display: grid;
+      grid-template-columns: 90px minmax(0, 1fr);
+      gap: 8px 14px;
+      margin: 0;
+    }
+
+    .artifact-grid dt {
+      color: var(--muted);
+      font-size: 0.77rem;
+      font-weight: 740;
+      letter-spacing: 0.055em;
+      text-transform: uppercase;
+    }
+
+    .artifact-grid dd {
+      min-width: 0;
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.55;
+    }
+
+    code {
+      padding: 0.12em 0.36em;
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      background: var(--surface-subtle);
+      color: var(--ink);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.9em;
+    }
+
+    details {
+      margin-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    summary {
+      padding: 14px 0 7px;
+      color: var(--ink);
+      font-weight: 680;
+      cursor: pointer;
+    }
+
+    details p { margin: 4px 0 0; }
+
+    .card-foot {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .adaptation-tag {
+      padding: 6px 8px;
+      border: 1px solid var(--line);
+      background: var(--surface-subtle);
+      color: var(--muted);
+    }
+
+    .source-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    .source-link {
+      padding: 0.16rem 0;
+      color: var(--test);
+      font-size: 1rem;
+      font-weight: 740;
+      text-decoration: none;
+      text-underline-offset: 0.18em;
+    }
+
+    .source-link:hover { text-decoration: underline; }
+    .source-link::after { content: " ↗"; }
+
+    .page-foot {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      margin-top: 38px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .page-foot p { max-width: 670px; margin: 0; }
+
+    .page-foot strong { color: var(--ink); }
+
+    @media (max-width: 860px) {
+      .page-shell { width: min(100% - 28px, 680px); padding-top: 48px; }
+      .hero { grid-template-columns: 1fr; align-items: start; }
+      .split-summary { min-width: 0; width: 100%; }
+      .gallery { grid-template-columns: 1fr; }
+      .toolbar { top: 8px; }
+    }
+
+    @media (max-width: 520px) {
+      .page-shell { width: min(100% - 18px, 680px); }
+      .hero { gap: 24px; margin-bottom: 26px; }
+      h1 { font-size: clamp(2.15rem, 12vw, 3.15rem); }
+      .toolbar { align-items: flex-start; flex-direction: column; gap: 8px; }
+      .filter-button { padding-inline: 10px; }
+      .showing-count { margin: 0 0 2px 4px; }
+      .card-head { grid-template-columns: 1fr; padding: 20px 18px 15px; gap: 10px; }
+      .objective { width: 100%; min-height: 56px; }
+      .visual-figure { margin: 0 9px; }
+      .visual-wrap { height: 340px; }
+      .visual-circlePacking { height: 390px; }
+      .circle-copy {
+        top: 218px;
+        right: 18px;
+        left: 18px;
+        display: grid;
+        grid-template-columns: 108px minmax(0, 1fr);
+        grid-template-areas:
+          "status objective"
+          "rule rule"
+          "constraints constraints";
+        column-gap: 16px;
+      }
+      .circle-copy .visual-status { grid-area: status; align-self: center; justify-content: center; padding-inline: 7px; }
+      .circle-objective { grid-area: objective; margin: 0; }
+      .circle-objective math { margin-top: 3px; font-size: 0.9rem; }
+      .circle-copy .visual-rule { grid-area: rule; width: 100%; margin: 12px 0 9px; }
+      .circle-constraints { grid-area: constraints; }
+      .constraint-list { grid-template-columns: 1fr; gap: 5px; margin-top: 6px; }
+      .constraint-list math { font-size: 0.78rem; }
+      .beat-copy { top: 192px; right: 18px; left: 18px; }
+      .pmf-y-label { top: 14px; left: 26px; }
+      .pmf-x-label { top: 166px; right: 8px; left: auto; }
+      .draw-title { margin-bottom: 7px; text-align: center; }
+      .draw-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 7px; }
+      .draw-token { min-height: 34px; }
+      .event-panel { margin-top: 10px; padding: 8px 10px 7px; }
+      .event-panel math { margin-block: 5px 3px; font-size: 0.86rem; }
+      .determinant-copy { top: 197px; right: 18px; left: 18px; }
+      .determinant-copy .visual-status { justify-content: center; min-height: 26px; }
+      .matrix-domain { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin: 9px 0 8px; }
+      .matrix-domain math { font-size: 0.72rem; }
+      .determinant-copy .visual-rule { display: none; }
+      .det-objective { display: flex; align-items: center; justify-content: center; gap: 10px; }
+      .det-objective .visual-kicker { display: inline; }
+      .det-objective math { display: inline-block; margin: 0; font-size: 1rem; }
+      .sign-key { justify-content: center; margin-top: 5px; }
+      .det-scorer { margin-top: 7px; text-align: center; }
+      .det-scorer .visual-kicker { display: none; }
+      .det-scorer strong,
+      .det-scorer span { display: block; margin: 0; }
+      .ast-overlay { top: 18px; right: 105px; left: 105px; }
+      .ast-connectors,
+      .ast-node { display: none; }
+      .ast-compact-expression {
+        display: block;
+        margin-top: 62px;
+        padding: 8px 4px;
+        border-block: 1px solid var(--line);
+      }
+      .ast-compact-expression math { font-size: 0.73rem; }
+      .card-copy { padding: 18px; }
+      .page-foot { flex-direction: column; }
+    }
+
+    @media (max-width: 380px) {
+      .filters { display: grid; width: 100%; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2px; }
+      .filter-button { min-width: 0; padding-inline: 1px; font-size: 0.76rem; }
+      .artifact-grid { grid-template-columns: 1fr; gap: 3px; }
+      .artifact-grid dt:not(:first-child) { margin-top: 12px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Benchmark suite · v0 proposal</p>
+        <h1>Mutator Evolution v0:<br>Benchmark Gallery</h1>
+        <p class="lede">Sixteen benchmark families for testing whether mutation strategies transfer across geometry, probability, systems, sequences, symbolic science, and combinatorics.</p>
+      </div>
+      <div class="split-summary" aria-label="Benchmark split summary">
+        <div class="summary-cell"><strong>8</strong><span>Train</span></div>
+        <div class="summary-cell"><strong>4</strong><span>Validation</span></div>
+        <div class="summary-cell"><strong>4</strong><span>Test</span></div>
+      </div>
+    </header>
+
+    <nav class="toolbar" aria-label="Filter benchmark cards">
+      <div class="filters" role="group" aria-label="Benchmark split">
+        <button class="filter-button" type="button" data-filter="All" aria-pressed="true">All</button>
+        <button class="filter-button" type="button" data-filter="Train" aria-pressed="false">Train</button>
+        <button class="filter-button" type="button" data-filter="Validation" aria-pressed="false">Validation</button>
+        <button class="filter-button" type="button" data-filter="Test" aria-pressed="false">Test</button>
+      </div>
+      <p class="showing-count" aria-live="polite">Showing 16 of 16</p>
+    </nav>
+
+    <section class="gallery" id="benchmark-gallery" aria-label="Mutator Evolution benchmark gallery"></section>
+
+    <footer class="page-foot">
+      <p><strong>Reading guide.</strong> Each visual is generated from small, internally consistent toy data. It explains the scorer contract but does not reproduce a seed, reference, or benchmark result.</p>
+      <p>Provisional v0 · 8 Train · 4 Validation · 4 Test</p>
+    </footer>
+  </main>
+
+  <script>
+    "use strict";
+
+    const BENCHMARKS = [
+      {
+        id: "circle-packing",
+        split: "Train",
+        family: "Packing geometry",
+        title: "Circle Packing",
+        objective: "maximize Σ rᵢ",
+        artifact: "<code>packing.json</code> · exactly 26 finite <code>(x, y, r)</code> triples",
+        scoring: "Validate positive radii, unit-square bounds, and every pairwise non-overlap; sum the radii.",
+        caption: "Fit 26 non-overlapping circles inside a unit square while maximizing their total radius.",
+        adaptationStatus: "V0 adapter required",
+        adaptationNote: "OpenEvolve evolves a Python constructor and uses evaluator artifacts as feedback. V0 converts the output to a declarative JSON artifact and adds strict finite-value, cardinality, bounds, and anti-cheat checks.",
+        sources: [{ label: "OpenEvolve code", url: "https://github.com/algorithmicsuperintelligence/openevolve/tree/411fb59c886c18704caaffb611e17cf9e7d824d2/examples/circle_packing_with_artifacts" }],
+        visual: "circlePacking"
+      },
+      {
+        id: "beat-the-average-pmf",
+        split: "Train",
+        family: "Probability vector",
+        title: "Beat-the-Average PMF",
+        objective: "maximize probability",
+        artifact: "<code>pmf.json</code> · fixed-length finite nonnegative vector",
+        scoring: `Normalize the vector, then exhaustively compute <math class="math-inline" aria-label="probability of X one plus X two plus X three being less than two X four"><mrow><mi mathvariant="double-struck">P</mi><mo>(</mo><msub><mi>X</mi><mn>1</mn></msub><mo>+</mo><msub><mi>X</mi><mn>2</mn></msub><mo>+</mo><msub><mi>X</mi><mn>3</mn></msub><mo>&lt;</mo><mn>2</mn><msub><mi>X</mi><mn>4</mn></msub><mo>)</mo></mrow></math> for four i.i.d. draws.`,
+        caption: "Shape a discrete distribution so one draw beats the combined average of three others as often as possible.",
+        adaptationStatus: "V0 artifact adaptation",
+        adaptationNote: "The AlphaEvolve task evolves a search function and clamps negative entries before normalization. V0 exposes only the PMF and makes feasibility checks explicit in the scorer.",
+        sources: [{ label: "AlphaEvolve code", url: "https://github.com/google-deepmind/alphaevolve_repository_of_problems/tree/8f447457957deac61e28bf1676746f0753b3b2f8/experiments/beat_the_average_game" }],
+        visual: "beatAverage"
+      },
+      {
+        id: "tsp-mini",
+        split: "Train",
+        family: "Routing",
+        title: "TSP Mini",
+        objective: "minimize closed-tour length",
+        artifact: "<code>tours.json</code> · one city permutation per frozen instance",
+        scoring: "Require every city exactly once, include the closing edge, and aggregate Euclidean tour length across instances.",
+        caption: "Visit every city exactly once and return to the start using the shortest possible route.",
+        adaptationStatus: "Custom 50–100-city V0 task",
+        adaptationNote: "Use a lightweight 50 to 100-city version, not OpenEvolve’s 1000-city C++ implementation. The visual uses 14 cities only to make the permutation and closing edge legible.",
+        sources: [{ label: "OpenEvolve code", url: "https://github.com/algorithmicsuperintelligence/openevolve/tree/411fb59c886c18704caaffb611e17cf9e7d824d2/examples/tsp_tour_minimization" }],
+        visual: "tsp"
+      },
+      {
+        id: "adaptive-signal-filtering",
+        split: "Train",
+        family: "Signal processing",
+        title: "Adaptive Signal Filtering",
+        objective: "minimize MSE, lag, roughness",
+        artifact: "<code>filter.json</code> · fixed-length bounded FIR coefficients",
+        scoring: "The scorer applies the taps to frozen signals and reports MSE, lag, and roughness separately.",
+        caption: "Remove noise while preserving real signal changes with minimal delay.",
+        adaptationStatus: "V0 scorer required",
+        adaptationNote: "Reuse the task concept, not the current composite evaluator. The scorer applies candidate-provided taps to frozen scorer-owned signals and independently computes every metric. Do not publish an overall scalar until its weights are frozen.",
+        sources: [{ label: "OpenEvolve code", url: "https://github.com/algorithmicsuperintelligence/openevolve/tree/411fb59c886c18704caaffb611e17cf9e7d824d2/examples/signal_processing" }],
+        visual: "signal"
+      },
+      {
+        id: "model-placement-prism",
+        split: "Train",
+        family: "Systems placement",
+        title: "Model Placement, Prism",
+        objective: "minimize max KV pressure",
+        artifact: "<code>placement.json</code> · complete model-to-GPU mapping",
+        scoring: "Validate IDs, uniqueness, completeness, and memory; compute each GPU’s KV-cache pressure and take the maximum.",
+        caption: "Distribute models across GPUs to reduce the worst KV-cache pressure without exceeding memory.",
+        adaptationStatus: "Hardened V0 adapter",
+        adaptationNote: "The V0 scorer must independently enforce valid GPU IDs, exact-once model placement, capacity, and positive free-memory denominators before computing the Prism pressure formula.",
+        sources: [{ label: "Prism code", url: "https://github.com/UCB-ADRS/ADRS/tree/2139fd86c0be3fb41c75768033fa8af5e4872c1a/openevolve/examples/ADRS/prism" }],
+        visual: "prism"
+      },
+      {
+        id: "correlation-functions",
+        split: "Train",
+        family: "Correlation functions",
+        title: "Correlation Functions",
+        objective: "minimize worst peak",
+        artifact: "Bounded step-height vectors for AC1 and minimum overlap",
+        scoring: `AC1 minimizes <math class="math-inline" aria-label="two n times the maximum self-convolution divided by the square of the sum of a"><mfrac><mrow><mn>2</mn><mi>n</mi><munder><mo>max</mo><mi>t</mi></munder><mo>(</mo><mi>a</mi><mo>∗</mo><mi>a</mi><mo>)</mo><mo>(</mo><mi>t</mi><mo>)</mo></mrow><msup><mrow><mo>(</mo><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>a</mi><mi>i</mi></msub><mo>)</mo></mrow><mn>2</mn></msup></mfrac></math>. Overlap minimizes <math class="math-inline" aria-label="two over n times the maximum shifted overlap"><mrow><mfrac><mn>2</mn><mi>n</mi></mfrac><munder><mo>max</mo><mi>t</mi></munder><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>h</mi><mi>i</mi></msub><mo>(</mo><mn>1</mn><mo>−</mo><msub><mi>h</mi><mrow><mi>i</mi><mo>+</mo><mi>t</mi></mrow></msub><mo>)</mo></mrow></math> with zero extension.`,
+        caption: "Shape step functions to suppress the worst self-correlation or shifted-overlap peak.",
+        adaptationStatus: "One family, two tasks",
+        adaptationNote: "AC1 and Erdős Minimum Overlap remain distinct objectives but share one family weight. V0 converts both released discretizations into bounded declarative vectors and recomputes their peaks.",
+        sources: [
+          { label: "AC1 evaluator", url: "https://github.com/test-time-training/discover/blob/6c40e82dab9d5de7416ac873ad5cd3106084aaed/examples/ac_inequalities/env.py" },
+          { label: "Overlap evaluator", url: "https://github.com/test-time-training/discover/blob/6c40e82dab9d5de7416ac873ad5cd3106084aaed/examples/erdos_min_overlap/env.py" }
+        ],
+        visual: "correlation"
+      },
+      {
+        id: "heilbronn-triangle",
+        split: "Train",
+        family: "Point geometry",
+        title: "Heilbronn Triangle, n = 11",
+        objective: "maximize minimum area",
+        artifact: "<code>points.json</code> · exactly 11 distinct finite points in a fixed unit-area triangle",
+        scoring: "Compute all 165 triple areas and return the smallest after validating containment and cardinality.",
+        caption: "Place 11 points so even the smallest triangle formed by any three is as large as possible.",
+        adaptationStatus: "V0 artifact adaptation",
+        adaptationNote: "The domain is a fixed triangle of area one, not necessarily an equilateral triangle. The highlighted toy triple is recomputed from the displayed points and is not an AlphaEvolve construction.",
+        sources: [{ label: "AlphaEvolve results", url: "https://github.com/google-deepmind/alphaevolve_results/blob/4226acbf237ff9ad10ba7673a2af127a2d8a5971/mathematical_results.ipynb" }],
+        visual: "heilbronn"
+      },
+      {
+        id: "sums-and-differences",
+        split: "Train",
+        family: "Additive combinatorics",
+        title: "Sums and Differences",
+        objective: "maximize difference-to-sum growth",
+        artifact: "<code>set.json</code> · sorted unique nonnegative integers including zero",
+        scoring: `Independently construct <math class="math-inline" aria-label="U plus U"><mrow><mi>U</mi><mo>+</mo><mi>U</mi></mrow></math> and <math class="math-inline" aria-label="U minus U"><mrow><mi>U</mi><mo>−</mo><mi>U</mi></mrow></math>, then compute <math class="math-inline" aria-label="one plus log difference-set ratio divided by log two max U plus one"><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mi mathvariant="normal">log</mi><mo>⁡</mo><mo>(</mo><mfrac><mrow><mo>|</mo><mi>U</mi><mo>−</mo><mi>U</mi><mo>|</mo></mrow><mrow><mo>|</mo><mi>U</mi><mo>+</mo><mi>U</mi><mo>|</mo></mrow></mfrac><mo>)</mo></mrow><mrow><mi mathvariant="normal">log</mi><mo>⁡</mo><mo>(</mo><mn>2</mn><mo>·</mo><mi mathvariant="normal">max</mi><mo>⁡</mo><mo>(</mo><mi>U</mi><mo>)</mo><mo>+</mo><mn>1</mn><mo>)</mo></mrow></mfrac></mrow></math>.`,
+        caption: "Choose an integer set whose difference set grows unusually large relative to its sum set.",
+        adaptationStatus: "Scorer hardening required",
+        adaptationNote: "Pin the Appendix B.6 objective and do not mix it with other sum–difference variants in the repository. V0 also caps set cardinality and integer magnitude.",
+        sources: [{ label: "AlphaEvolve notebook", url: "https://github.com/google-deepmind/alphaevolve_repository_of_problems/blob/8f447457957deac61e28bf1676746f0753b3b2f8/experiments/sums_differences_problems/sums_differences_problems.ipynb" }],
+        visual: "sumDifference"
+      },
+      {
+        id: "factor-n-factorial",
+        split: "Validation",
+        family: "Exact arithmetic",
+        title: "Factor N! into Balanced Products",
+        objective: "maximize smallest product",
+        artifact: "<code>assignment.json</code> · one bucket ID per prime-factor occurrence",
+        scoring: "Reconstruct every bucket product with exact integers and select the minimum; all factors must be assigned exactly once.",
+        caption: "Partition the prime factors of N! so the smallest resulting product is as large as possible.",
+        adaptationStatus: "V0 artifact adaptation",
+        adaptationNote: "The gallery uses the exact factors of 8! and eight log-scaled product bars. Production N fixes both the factorial and <code>bucket_count = N</code>; any second-smallest tie-break must also be frozen before pilot admission.",
+        sources: [{ label: "AlphaEvolve notebook", url: "https://github.com/google-deepmind/alphaevolve_repository_of_problems/blob/8f447457957deac61e28bf1676746f0753b3b2f8/experiments/factoring_n_factorial/factoring_n_factorial.ipynb" }],
+        visual: "factorial"
+      },
+      {
+        id: "online-bin-packing",
+        split: "Validation",
+        family: "Online optimization",
+        title: "Online Bin Packing",
+        objective: "minimize bins used",
+        artifact: "<code>policy.json</code> · constrained priority rule evaluated on frozen item streams",
+        scoring: "For each arrival, rank feasible bins, break priority ties by lowest bin index, open a new bin when none is feasible, and minimize mean bins used across frozen instances.",
+        caption: "Place each arriving item immediately, using as few fixed-capacity bins as possible.",
+        adaptationStatus: "Safe policy DSL required",
+        adaptationNote: "The official FunSearch artifact is executable priority code. V0 uses a pinned safe DSL or AST, deterministic lowest-index ties, explicit new-bin behavior, and mean bin count as the frozen aggregate. The diagram is one policy rollout, not the evolved artifact itself.",
+        sources: [{ label: "FunSearch notebook", url: "https://github.com/google-deepmind/funsearch/blob/cc53f274237d7ab05c19df939edbc1f9616a7c19/bin_packing/bin_packing.ipynb" }],
+        visual: "binPacking"
+      },
+      {
+        id: "maximal-determinant",
+        split: "Validation",
+        family: "Matrix construction",
+        title: "Maximal Determinant, n = 29",
+        objective: "maximize |det H|",
+        artifact: "<code>matrix.json</code> · exactly 29 × 29 entries in {−1, +1}",
+        scoring: "Validate shape and signs, then recompute the absolute determinant with exact Bareiss arithmetic.",
+        caption: "Arrange ±1 entries in a 29 × 29 matrix to maximize its absolute determinant.",
+        adaptationStatus: "Verifier audit required",
+        adaptationNote: "ThetaEvolve names this task HadamardMatrix, but the verifier does not impose HHᵀ = 29I. V0 should describe it accurately as a maximal-determinant ±1 construction.",
+        sources: [{ label: "ThetaEvolve verifier", url: "https://github.com/ypwang61/ThetaEvolve/blob/7c12898f5d7627af403e3aca643af76199fb5c20/openevolve_adapted/examples/hadamard_matrix/evaluators/verify.py" }],
+        visual: "determinant"
+      },
+      {
+        id: "erdos-discrepancy",
+        split: "Validation",
+        family: "Sequence construction",
+        title: "Erdős Discrepancy, D = 2",
+        objective: "maximize valid prefix length",
+        artifact: "<code>sequence.json</code> · finite sequence with every entry in {−1, +1}",
+        scoring: "Check every partial sum on every homogeneous progression and find the longest prefix with discrepancy at most two.",
+        caption: "Extend a ±1 sequence while every homogeneous progression stays within discrepancy two.",
+        adaptationStatus: "V0 indexing normalization",
+        adaptationNote: "Use mathematical one-based indices and remove source-specific sentinel conventions. A fractional first-violation tie-break may be retained only if frozen in the protocol.",
+        sources: [{ label: "AlphaEvolve notebook", url: "https://github.com/google-deepmind/alphaevolve_repository_of_problems/blob/8f447457957deac61e28bf1676746f0753b3b2f8/experiments/erdos_discrepancy_problem/erdos_discrepancy_problem.ipynb" }],
+        visual: "discrepancy"
+      },
+      {
+        id: "isosceles-free-grid",
+        split: "Test",
+        family: "Grid combinatorics",
+        title: "Isosceles-Free Grid Subset",
+        objective: "maximize valid set size",
+        artifact: "<code>points.json</code> · unique integer grid points within frozen bounds",
+        scoring: "Reject any triple with two equal squared pairwise distances, then count the selected points.",
+        caption: "Select a large lattice subset while excluding every isosceles triple.",
+        adaptationStatus: "Sealed V0 artifact task",
+        adaptationNote: "The AlphaEvolve notebook evolves a Python construction for much larger grids. V0 uses a fixed point-list artifact and a strict integer-geometry verifier.",
+        sources: [{ label: "AlphaEvolve notebook", url: "https://github.com/google-deepmind/alphaevolve_repository_of_problems/blob/8f447457957deac61e28bf1676746f0753b3b2f8/experiments/subsets_of_the_grid_with_no_isosceles_triangles/subsets_of_the_grid_with_no_isosceles_triangles.ipynb" }],
+        visual: "isosceles"
+      },
+      {
+        id: "llm-srbench-mini",
+        split: "Test",
+        family: "Scientific expression discovery",
+        title: "LLM-SRBench Mini",
+        objective: "minimize held-out NMSE",
+        artifact: "<code>expression.json</code> · bounded safe AST plus constants",
+        scoring: "Evaluate whitelisted operators on frozen held-out data and report normalized mean squared error.",
+        caption: "Discover a compact symbolic expression that predicts held-out scientific measurements.",
+        adaptationStatus: "Custom Mini + safe AST",
+        adaptationNote: "The official suite has 239 problems and multiple ID/OOD metrics. Task subset, operator set, depth, constants, and held-out NMSE are V0 choices; arbitrary Python and stochastic fitting are excluded.",
+        sources: [
+          { label: "LLM-SRBench code", url: "https://github.com/deep-symbolic-mathematics/llm-srbench/tree/6fdbe409b75ea749c0a93c69b6861637d804dec4" },
+          { label: "Metric pipeline", url: "https://github.com/deep-symbolic-mathematics/llm-srbench/blob/6fdbe409b75ea749c0a93c69b6861637d804dec4/bench/pipelines.py" }
+        ],
+        visual: "symbolicRegression"
+      },
+      {
+        id: "cloudcast",
+        split: "Test",
+        family: "Systems routing",
+        title: "Cloudcast",
+        objective: "minimize transfer cost",
+        artifact: "<code>routes.json</code> · one complete route per destination and data partition",
+        scoring: "Validate endpoints, path continuity, topology, capacity, and completeness; run the frozen local cost simulator.",
+        caption: "Route partitioned data through shared inter-cloud relays while minimizing total transfer cost.",
+        adaptationStatus: "Custom artifact-only V0",
+        adaptationNote: "SkyDiscover evolves a Python search algorithm and uses downloaded profiles. V0 freezes the topology and profiles, then evaluates only declarative routes in a local simulator.",
+        sources: [
+          { label: "Cloudcast code", url: "https://github.com/skydiscover-ai/skydiscover/tree/dc10ece02c55f49fd2f20cc1b5355fab4d8ba9e9/benchmarks/ADRS/cloudcast" },
+          { label: "Evaluator", url: "https://github.com/skydiscover-ai/skydiscover/blob/dc10ece02c55f49fd2f20cc1b5355fab4d8ba9e9/benchmarks/ADRS/cloudcast/evaluator/evaluator.py" }
+        ],
+        visual: "cloudcast"
+      },
+      {
+        id: "edges-vs-triangles",
+        split: "Test",
+        family: "Extremal graph theory",
+        title: "Edges vs. Triangles",
+        objective: "minimize area + 10× max gap",
+        artifact: "<code>weights.json</code> · 1–500 rows of exactly 20 finite nonnegative weights, each with positive mass",
+        scoring: `Normalize <math class="math-inline" aria-label="p i equals w i divided by sum of w"><mrow><msub><mi>p</mi><mi>i</mi></msub><mo>=</mo><mfrac><msub><mi>w</mi><mi>i</mi></msub><mrow><munder><mo>∑</mo><mi>j</mi></munder><msub><mi>w</mi><mi>j</mi></msub></mrow></mfrac></mrow></math>; derive <math class="math-inline" aria-label="rho moment"><mrow><mi>ρ</mi><mo>=</mo><mn>1</mn><mo>−</mo><munder><mo>∑</mo><mi>i</mi></munder><msubsup><mi>p</mi><mi>i</mi><mn>2</mn></msubsup></mrow></math> and <math class="math-inline" aria-label="tau moment"><mrow><mi>τ</mi><mo>=</mo><mn>1</mn><mo>−</mo><mn>3</mn><munder><mo>∑</mo><mi>i</mi></munder><msubsup><mi>p</mi><mi>i</mi><mn>2</mn></msubsup><mo>+</mo><mn>2</mn><munder><mo>∑</mo><mi>i</mi></munder><msubsup><mi>p</mi><mi>i</mi><mn>3</mn></msubsup></mrow></math>; score the capped slope-3 envelope.`,
+        caption: "Shape probability witnesses to tighten the triangle-density envelope across the full edge-density range.",
+        adaptationStatus: "Direct structured artifact",
+        adaptationNote: "This is already a verifier-backed JSON construction in EinsteinArena. V0 only needs frozen dimensions, finite checks, file limits, and score-direction normalization.",
+        sources: [{ label: "EinsteinArena verifier", url: "https://github.com/vinid/einstein-arena/blob/98073fca26654d048d70acdfe1e319a23e8e41c6/web/src/lib/problems/edges-vs-triangles.ts" }],
+        visual: "edgesTriangles"
+      }
+    ];
+
+    const gallery = document.getElementById("benchmark-gallery");
+    const countNode = document.querySelector(".showing-count");
+    const filterButtons = [...document.querySelectorAll(".filter-button")];
+
+    const escapeText = (value) => String(value)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;");
+
+    const OBJECTIVE_PRESENTATIONS = {
+      "circle-packing": {
+        direction: "Maximize",
+        math: `<math aria-label="sum of radii"><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mn>26</mn></munderover><msub><mi>r</mi><mi>i</mi></msub></mrow></math>`
+      },
+      "beat-the-average-pmf": {
+        direction: "Maximize",
+        math: `<math aria-label="probability of X one plus X two plus X three being less than two X four"><mrow><mi mathvariant="double-struck">P</mi><mo>(</mo><msub><mi>X</mi><mn>1</mn></msub><mo>+</mo><msub><mi>X</mi><mn>2</mn></msub><mo>+</mo><msub><mi>X</mi><mn>3</mn></msub><mo>&lt;</mo><mn>2</mn><msub><mi>X</mi><mn>4</mn></msub><mo>)</mo></mrow></math>`
+      },
+      "tsp-mini": {
+        direction: "Minimize",
+        math: `<math aria-label="closed tour length L of pi"><mrow><mi>L</mi><mo>(</mo><mi>π</mi><mo>)</mo></mrow></math>`
+      },
+      "adaptive-signal-filtering": {
+        direction: "Minimize",
+        math: `<math aria-label="MSE, absolute lag, and roughness"><mrow><mo>(</mo><mi mathvariant="normal">MSE</mi><mo>,</mo><mo>|</mo><mi>lag</mi><mo>|</mo><mo>,</mo><mi>R</mi><mo>)</mo></mrow></math>`
+      },
+      "model-placement-prism": {
+        direction: "Minimize",
+        math: `<math aria-label="maximum GPU pressure"><mrow><munder><mo>max</mo><mi>g</mi></munder><msub><mi>pressure</mi><mi>g</mi></msub></mrow></math>`
+      },
+      "correlation-functions": {
+        direction: "Minimize",
+        math: `<math aria-label="maximum correlation peak"><mrow><munder><mo>max</mo><mi>t</mi></munder><mi>C</mi><mo>(</mo><mi>t</mi><mo>)</mo></mrow></math>`
+      },
+      "heilbronn-triangle": {
+        direction: "Maximize",
+        math: `<math aria-label="minimum triangle area"><mrow><munder><mo>min</mo><mrow><mi>i</mi><mo>&lt;</mo><mi>j</mi><mo>&lt;</mo><mi>k</mi></mrow></munder><msub><mi>A</mi><mrow><mi>i</mi><mi>j</mi><mi>k</mi></mrow></msub></mrow></math>`
+      },
+      "sums-and-differences": {
+        direction: "Maximize",
+        math: `<math aria-label="difference set size over sum set size"><mfrac><mrow><mo>|</mo><mi>U</mi><mo>−</mo><mi>U</mi><mo>|</mo></mrow><mrow><mo>|</mo><mi>U</mi><mo>+</mo><mi>U</mi><mo>|</mo></mrow></mfrac></math>`
+      },
+      "factor-n-factorial": {
+        direction: "Maximize",
+        math: `<math aria-label="minimum bucket product"><mrow><munder><mo>min</mo><mi>j</mi></munder><msub><mi>P</mi><mi>j</mi></msub></mrow></math>`
+      },
+      "online-bin-packing": {
+        direction: "Minimize",
+        math: `<math aria-label="expected number of bins"><mrow><mi mathvariant="double-struck">E</mi><mo>[</mo><mi>B</mi><mo>]</mo></mrow></math>`
+      },
+      "maximal-determinant": {
+        direction: "Maximize",
+        math: `<math aria-label="absolute determinant of H"><mrow><mo>|</mo><mi mathvariant="normal">det</mi><mo>⁡</mo><mi>H</mi><mo>|</mo></mrow></math>`
+      },
+      "erdos-discrepancy": {
+        direction: "Maximize",
+        math: `<math aria-label="valid prefix length N"><mi>N</mi></math>`
+      },
+      "isosceles-free-grid": {
+        direction: "Maximize",
+        math: `<math aria-label="cardinality of S"><mrow><mo>|</mo><mi>S</mi><mo>|</mo></mrow></math>`
+      },
+      "llm-srbench-mini": {
+        direction: "Minimize",
+        math: `<math aria-label="held-out normalized mean squared error"><msub><mi mathvariant="normal">NMSE</mi><mi>test</mi></msub></math>`
+      },
+      "cloudcast": {
+        direction: "Minimize",
+        math: `<math aria-label="sum of route costs"><mrow><munder><mo>∑</mo><mi>r</mi></munder><mi>cost</mi><mo>(</mo><mi>r</mi><mo>)</mo></mrow></math>`
+      },
+      "edges-vs-triangles": {
+        direction: "Minimize",
+        math: `<math aria-label="area plus ten times maximum gap"><mrow><mi>A</mi><mo>+</mo><mn>10</mn><msub><mi>Δ</mi><mi>max</mi></msub></mrow></math>`
+      }
+    };
+
+    function objectiveMarkup(benchmark) {
+      const presentation = OBJECTIVE_PRESENTATIONS[benchmark.id];
+      return `<div class="objective" aria-label="${escapeText(benchmark.objective)}">
+        <span class="objective-direction">${presentation.direction}</span>
+        ${presentation.math}
+      </div>`;
+    }
+
+    function visualOverlayMarkup(benchmark) {
+      if (benchmark.visual === "circlePacking") {
+        const sum = circlePackingCircles().reduce((total, circle) => total + circle.r, 0).toFixed(3);
+        return `<div class="visual-overlay" aria-hidden="true">
+          <div class="visual-copy circle-copy">
+            <div class="visual-status">Valid · n = 26</div>
+            <div class="circle-objective">
+              <span class="visual-kicker">Objective</span>
+              <math><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mn>26</mn></munderover><msub><mi>r</mi><mi>i</mi></msub><mo>=</mo><mn>${sum}</mn></mrow></math>
+            </div>
+            <hr class="visual-rule">
+            <div class="circle-constraints">
+              <span class="visual-kicker">Constraints</span>
+              <div class="constraint-list">
+                <math><mrow><msub><mi>r</mi><mi>i</mi></msub><mo>≤</mo><msub><mi>x</mi><mi>i</mi></msub><mo>≤</mo><mn>1</mn><mo>−</mo><msub><mi>r</mi><mi>i</mi></msub></mrow></math>
+                <math><mrow><msub><mi>r</mi><mi>i</mi></msub><mo>≤</mo><msub><mi>y</mi><mi>i</mi></msub><mo>≤</mo><mn>1</mn><mo>−</mo><msub><mi>r</mi><mi>i</mi></msub></mrow></math>
+                <math><mrow><msub><mrow><mo>‖</mo><msub><mi>c</mi><mi>i</mi></msub><mo>−</mo><msub><mi>c</mi><mi>j</mi></msub><mo>‖</mo></mrow><mn>2</mn></msub><mo>≥</mo><msub><mi>r</mi><mi>i</mi></msub><mo>+</mo><msub><mi>r</mi><mi>j</mi></msub><mspace width="0.5em"/><mo>(</mo><mi>i</mi><mo>&lt;</mo><mi>j</mi><mo>)</mo></mrow></math>
+              </div>
+            </div>
+          </div>
+        </div>`;
+      }
+
+      if (benchmark.visual === "beatAverage") {
+        const probability = beatProbability([1, 2, 4, 6, 5, 3, 1]).toFixed(3);
+        const draw = (index) => `<span class="draw-token"><math><msub><mi>X</mi><mn>${index}</mn></msub></math></span>`;
+        return `<div class="visual-overlay" aria-hidden="true">
+          <span class="pmf-axis-label pmf-y-label"><math><mrow><msub><mi>p</mi><mi>X</mi></msub><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math></span>
+          <span class="pmf-axis-label pmf-x-label"><math><mi>x</mi></math></span>
+          <div class="visual-copy beat-copy">
+            <div class="draw-title">Four i.i.d. draws from <math><mi>p</mi></math></div>
+            <div class="draw-grid">${[1, 2, 3, 4].map(draw).join("")}</div>
+            <div class="event-panel">
+              <span class="visual-kicker">Event</span>
+              <math><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>+</mo><msub><mi>X</mi><mn>2</mn></msub><mo>+</mo><msub><mi>X</mi><mn>3</mn></msub><mo>&lt;</mo><mn>2</mn><msub><mi>X</mi><mn>4</mn></msub></mrow></math>
+              <span class="toy-value">Toy probability ${probability}</span>
+            </div>
+          </div>
+        </div>`;
+      }
+
+      if (benchmark.visual === "symbolicRegression") {
+        return `<div class="visual-overlay" aria-hidden="true">
+          <div class="ast-overlay">
+            <span class="ast-title">Safe AST</span>
+            <svg class="ast-connectors" viewBox="0 0 200 165" preserveAspectRatio="none" focusable="false">
+              <line x1="100" y1="44" x2="40" y2="69"/>
+              <line x1="100" y1="44" x2="158" y2="69"/>
+              <line x1="158" y1="99" x2="132" y2="124"/>
+              <line x1="158" y1="99" x2="180" y2="124"/>
+            </svg>
+            <span class="ast-node ast-root"><math><mo>+</mo></math></span>
+            <span class="ast-node ast-term"><math><mrow><mn>0.42</mn><mo>·</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></math></span>
+            <span class="ast-node ast-add"><math><mo>+</mo></math></span>
+            <span class="ast-node ast-sin"><math><mrow><mi mathvariant="normal">sin</mi><mo>⁡</mo><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math></span>
+            <span class="ast-node ast-constant"><math><mn>0.35</mn></math></span>
+            <span class="ast-compact-expression"><math><mrow><mn>0.42</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi mathvariant="normal">sin</mi><mo>⁡</mo><mo>(</mo><mi>x</mi><mo>)</mo><mo>+</mo><mn>0.35</mn></mrow></math></span>
+          </div>
+        </div>`;
+      }
+
+      if (benchmark.visual === "determinant") {
+        return `<div class="visual-overlay" aria-hidden="true">
+          <div class="visual-copy determinant-copy">
+            <div class="visual-status">29 × 29 sign matrix</div>
+            <div class="matrix-domain">
+              <math><mrow><mi>H</mi><mo>=</mo><msub><mrow><mo>(</mo><msub><mi>h</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>)</mo></mrow><mrow><mn>1</mn><mo>≤</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo>≤</mo><mn>29</mn></mrow></msub></mrow></math>
+              <math><mrow><msub><mi>h</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>∈</mo><mo>{</mo><mo>−</mo><mn>1</mn><mo>,</mo><mo>+</mo><mn>1</mn><mo>}</mo></mrow></math>
+            </div>
+            <hr class="visual-rule">
+            <div class="det-objective">
+              <span class="visual-kicker">Objective</span>
+              <math><mrow><mo>|</mo><mi mathvariant="normal">det</mi><mo>⁡</mo><mi>H</mi><mo>|</mo></mrow></math>
+            </div>
+            <div class="sign-key">
+              <span><i class="sign-swatch"></i>+1</span>
+              <span><i class="sign-swatch"></i>−1</span>
+            </div>
+            <div class="det-scorer">
+              <span class="visual-kicker">Scorer</span>
+              <strong>Exact Bareiss determinant</strong>
+              <span>No orthogonality constraint</span>
+            </div>
+          </div>
+        </div>`;
+      }
+
+      return "";
+    }
+
+    function cardMarkup(benchmark) {
+      const sourceLinks = benchmark.sources.map((source) =>
+        `<a class="source-link" href="${escapeText(source.url)}" target="_blank" rel="noopener noreferrer">${escapeText(source.label)}</a>`
+      ).join("");
+
+      return `
+        <article class="benchmark-card" id="benchmark-${benchmark.id}" data-benchmark-id="${benchmark.id}" data-split="${benchmark.split}">
+          <header class="card-head">
+            <div>
+              <div class="meta-row">
+                <span class="split-tag">${benchmark.split}</span>
+                <span class="family-tag">${benchmark.family}</span>
+              </div>
+              <h2 class="card-title" id="title-${benchmark.id}">${benchmark.title}</h2>
+            </div>
+            ${objectiveMarkup(benchmark)}
+          </header>
+          <figure class="visual-figure">
+            <div class="visual-wrap visual-${benchmark.visual}" role="img" aria-labelledby="title-${benchmark.id}" aria-describedby="visual-description-${benchmark.id}">
+              <canvas data-visual="${benchmark.visual}" aria-hidden="true"></canvas>
+              ${visualOverlayMarkup(benchmark)}
+              <span class="sr-only" id="visual-description-${benchmark.id}">Illustrative schematic, not a benchmark result. ${escapeText(benchmark.caption)} Objective: ${escapeText(benchmark.objective)}.</span>
+            </div>
+            <figcaption class="schematic-note">Illustrative schematic, not a benchmark result</figcaption>
+          </figure>
+          <div class="card-copy">
+            <p class="caption">${benchmark.caption}</p>
+            <dl class="artifact-grid">
+              <dt>Artifact</dt><dd>${benchmark.artifact}</dd>
+              <dt>Scorer</dt><dd>${benchmark.scoring}</dd>
+            </dl>
+            <details>
+              <summary>Feasibility &amp; V0 adaptation</summary>
+              <p>${benchmark.adaptationNote}</p>
+            </details>
+            <footer class="card-foot">
+              <span class="adaptation-tag">${benchmark.adaptationStatus}</span>
+              <span class="source-links">${sourceLinks}</span>
+            </footer>
+          </div>
+        </article>`;
+    }
+
+    gallery.innerHTML = BENCHMARKS.map(cardMarkup).join("");
+
+    function applyFilter(filter) {
+      let visible = 0;
+      document.querySelectorAll(".benchmark-card").forEach((card) => {
+        const show = filter === "All" || card.dataset.split === filter;
+        card.hidden = !show;
+        if (show) visible += 1;
+      });
+      filterButtons.forEach((button) => {
+        button.setAttribute("aria-pressed", String(button.dataset.filter === filter));
+      });
+      countNode.textContent = `Showing ${visible} of ${BENCHMARKS.length}`;
+      requestAnimationFrame(renderAllVisible);
+    }
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => applyFilter(button.dataset.filter));
+    });
+
+    const css = () => {
+      const styles = getComputedStyle(document.documentElement);
+      const read = (name) => styles.getPropertyValue(name).trim();
+      return {
+        surface: read("--surface"),
+        subtle: read("--surface-subtle"),
+        ink: read("--ink"),
+        muted: read("--muted"),
+        line: read("--line"),
+        strongLine: read("--line-strong"),
+        accent: read("--accent"),
+        accentSoft: read("--accent-soft"),
+        train: read("--train"),
+        validation: read("--validation"),
+        test: read("--test"),
+        danger: read("--danger"),
+        blue: read("--blue"),
+        gold: read("--gold")
+      };
+    };
+
+    function setupCanvas(canvas) {
+      const rect = canvas.getBoundingClientRect();
+      const width = Math.max(280, rect.width);
+      const height = Math.max(220, rect.height);
+      const ratio = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = Math.round(width * ratio);
+      canvas.height = Math.round(height * ratio);
+      const ctx = canvas.getContext("2d");
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+      ctx.clearRect(0, 0, width, height);
+      ctx.lineCap = "round";
+      ctx.lineJoin = "round";
+      return { ctx, width, height, colors: css() };
+    }
+
+    function pathRoundRect(ctx, x, y, width, height, radius = 8) {
+      const r = Math.min(radius, width / 2, height / 2);
+      ctx.beginPath();
+      ctx.moveTo(x + r, y);
+      ctx.arcTo(x + width, y, x + width, y + height, r);
+      ctx.arcTo(x + width, y + height, x, y + height, r);
+      ctx.arcTo(x, y + height, x, y, r);
+      ctx.arcTo(x, y, x + width, y, r);
+      ctx.closePath();
+    }
+
+    function fillRoundRect(ctx, x, y, width, height, radius, fill, stroke = null) {
+      pathRoundRect(ctx, x, y, width, height, radius);
+      ctx.fillStyle = fill;
+      ctx.fill();
+      if (stroke) {
+        ctx.strokeStyle = stroke;
+        ctx.lineWidth = 1;
+        ctx.stroke();
+      }
+    }
+
+    function label(ctx, text, x, y, color, size = 12, weight = 600, align = "left") {
+      const readableSize = Math.max(size, 11);
+      ctx.fillStyle = color;
+      ctx.font = `${weight} ${readableSize}px Inter, ui-sans-serif, sans-serif`;
+      ctx.textAlign = align;
+      ctx.textBaseline = "middle";
+      ctx.fillText(text, x, y);
+    }
+
+    function mono(ctx, text, x, y, color, size = 11, align = "left") {
+      const readableSize = Math.max(size, 10.5);
+      ctx.fillStyle = color;
+      ctx.font = `600 ${readableSize}px ui-monospace, SFMono-Regular, Menlo, monospace`;
+      ctx.textAlign = align;
+      ctx.textBaseline = "middle";
+      ctx.fillText(text, x, y);
+    }
+
+    function mathText(ctx, text, x, y, color, size = 15, align = "left", weight = 500) {
+      ctx.fillStyle = color;
+      ctx.font = `${weight} ${Math.max(size, 12)}px "STIX Two Math", "Cambria Math", "Latin Modern Math", Georgia, serif`;
+      ctx.textAlign = align;
+      ctx.textBaseline = "middle";
+      ctx.fillText(text, x, y);
+    }
+
+    function arrow(ctx, x1, y1, x2, y2, color, width = 1.5) {
+      const angle = Math.atan2(y2 - y1, x2 - x1);
+      ctx.strokeStyle = color;
+      ctx.fillStyle = color;
+      ctx.lineWidth = width;
+      ctx.beginPath();
+      ctx.moveTo(x1, y1);
+      ctx.lineTo(x2, y2);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.moveTo(x2, y2);
+      ctx.lineTo(x2 - 7 * Math.cos(angle - Math.PI / 6), y2 - 7 * Math.sin(angle - Math.PI / 6));
+      ctx.lineTo(x2 - 7 * Math.cos(angle + Math.PI / 6), y2 - 7 * Math.sin(angle + Math.PI / 6));
+      ctx.closePath();
+      ctx.fill();
+    }
+
+    function drawAxes(ctx, x, y, width, height, colors) {
+      ctx.strokeStyle = colors.line;
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(x, y);
+      ctx.lineTo(x, y + height);
+      ctx.lineTo(x + width, y + height);
+      ctx.stroke();
+    }
+
+    function drawPolyline(ctx, points, color, width = 2, dash = []) {
+      if (!points.length) return;
+      ctx.save();
+      ctx.strokeStyle = color;
+      ctx.lineWidth = width;
+      ctx.setLineDash(dash);
+      ctx.beginPath();
+      ctx.moveTo(points[0][0], points[0][1]);
+      points.slice(1).forEach(([x, y]) => ctx.lineTo(x, y));
+      ctx.stroke();
+      ctx.restore();
+    }
+
+    function circlePackingCircles() {
+      const circles = [];
+      const rows = [
+        { y: 0.10, xs: [0.09, 0.25, 0.41, 0.57, 0.73, 0.89] },
+        { y: 0.30, xs: [0.12, 0.31, 0.50, 0.69, 0.88] },
+        { y: 0.50, xs: [0.11, 0.30, 0.49, 0.68, 0.87] },
+        { y: 0.70, xs: [0.13, 0.32, 0.51, 0.70, 0.89] },
+        { y: 0.90, xs: [0.11, 0.30, 0.49, 0.68, 0.87] }
+      ];
+      rows.forEach((row, rowIndex) => row.xs.forEach((x, index) => {
+        circles.push({ x, y: row.y, r: 0.052 + ((rowIndex * 3 + index) % 4) * 0.003 });
+      }));
+      return circles;
+    }
+
+    function renderCirclePacking(ctx, w, h, c) {
+      const circles = circlePackingCircles();
+      const compact = w < 430;
+      const side = compact ? Math.min(170, w - 74) : Math.min(h - 58, w * 0.46);
+      const ox = compact ? (w - side) / 2 : 28;
+      const oy = compact ? 20 : 28;
+      ctx.fillStyle = c.surface;
+      ctx.strokeStyle = c.strongLine;
+      ctx.lineWidth = 1.4;
+      ctx.fillRect(ox, oy, side, side);
+      ctx.strokeRect(ox, oy, side, side);
+      circles.forEach((circle, index) => {
+        ctx.beginPath();
+        ctx.arc(ox + circle.x * side, oy + circle.y * side, circle.r * side, 0, Math.PI * 2);
+        ctx.fillStyle = index % 3 === 0 ? c.accentSoft : c.surface;
+        ctx.fill();
+        ctx.strokeStyle = c.train;
+        ctx.lineWidth = 1.25;
+        ctx.stroke();
+      });
+      mono(ctx, "0", ox - 3, oy + side + 17, c.muted, 10, "center");
+      mono(ctx, "1", ox + side, oy + side + 17, c.muted, 10, "center");
+      mono(ctx, "1", ox - 11, oy, c.muted, 10, "center");
+      label(ctx, "unit square", ox + side / 2, oy - 12, c.muted, 11, 650, "center");
+    }
+
+    function beatProbability(weights) {
+      const total = weights.reduce((sum, value) => sum + value, 0);
+      const p = weights.map((value) => value / total);
+      let probability = 0;
+      for (let a = 0; a < p.length; a += 1) {
+        for (let b = 0; b < p.length; b += 1) {
+          for (let d = 0; d < p.length; d += 1) {
+            for (let e = 0; e < p.length; e += 1) {
+              if (a + b + d < 2 * e) probability += p[a] * p[b] * p[d] * p[e];
+            }
+          }
+        }
+      }
+      return probability;
+    }
+
+    function renderBeatAverage(ctx, w, h, c) {
+      const weights = [1, 2, 4, 6, 5, 3, 1];
+      const total = weights.reduce((sum, value) => sum + value, 0);
+      const probabilities = weights.map((value) => value / total);
+      const compact = w < 430;
+      const chart = compact
+        ? { x: 26, y: 35, width: w - 52, height: 125 }
+        : { x: 34, y: 48, width: Math.min(w * 0.50, 290), height: 205 };
+      drawAxes(ctx, chart.x, chart.y, chart.width, chart.height, c);
+      const gap = chart.width / weights.length;
+      probabilities.forEach((value, index) => {
+        const barHeight = value / Math.max(...probabilities) * (chart.height - 24);
+        fillRoundRect(ctx, chart.x + index * gap + 5, chart.y + chart.height - barHeight, gap - 10, barHeight, 4, index === 3 ? c.train : c.accentSoft, c.train);
+        mono(ctx, String(index), chart.x + index * gap + gap / 2, chart.y + chart.height + 15, c.muted, 10, "center");
+      });
+    }
+
+    function closedTourLength(cities, tour) {
+      return tour.reduce((total, cityIndex, index) => {
+        const nextIndex = tour[(index + 1) % tour.length];
+        return total + Math.hypot(cities[cityIndex][0] - cities[nextIndex][0], cities[cityIndex][1] - cities[nextIndex][1]);
+      }, 0);
+    }
+
+    function renderTsp(ctx, w, h, c) {
+      const cities = [[0.05,0.58],[0.13,0.25],[0.29,0.08],[0.52,0.05],[0.76,0.13],[0.92,0.36],[0.88,0.66],[0.75,0.88],[0.49,0.93],[0.25,0.84],[0.12,0.68],[0.35,0.55],[0.57,0.65],[0.68,0.40]];
+      const tour = [0,1,2,3,4,5,13,6,7,8,9,10,11,12];
+      const compact = w < 430;
+      const mapX = compact ? 24 : 26;
+      const mapY = compact ? 20 : 24;
+      const mapW = compact ? w - 48 : Math.min(w * 0.64, 355);
+      const mapH = compact ? h - 104 : 195;
+      const point = (index) => [mapX + cities[index][0] * mapW, mapY + cities[index][1] * mapH];
+      ctx.strokeStyle = c.line;
+      ctx.strokeRect(mapX, mapY, mapW, mapH);
+      const routePoints = [...tour, tour[0]].map(point);
+      drawPolyline(ctx, routePoints, c.train, 2.25);
+      tour.forEach((cityIndex, order) => {
+        const [x, y] = point(cityIndex);
+        ctx.beginPath();
+        ctx.arc(x, y, 5.5, 0, Math.PI * 2);
+        ctx.fillStyle = cityIndex === tour[0] ? c.gold : c.surface;
+        ctx.fill();
+        ctx.strokeStyle = c.train;
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+        if (order === 0) label(ctx, "start", x + 9, y - 8, c.muted, 9, 600);
+      });
+      const length = closedTourLength(cities, tour);
+      if (!compact) {
+        const sideX = mapX + mapW + 18;
+        label(ctx, "closed route", sideX, 52, c.ink, 12, 700);
+        mono(ctx, `L = ${length.toFixed(2)}`, sideX, 78, c.train, 12);
+        label(ctx, "toy units", sideX, 98, c.muted, 9, 550);
+        label(ctx, "50–100 cities", sideX, 145, c.ink, 12, 700);
+        label(ctx, "V0 adaptation", sideX, 165, c.muted, 10, 600);
+      } else {
+        fillRoundRect(ctx, mapX + 8, mapY + 8, 129, 25, 7, c.surface, c.line);
+        mono(ctx, `closed L=${length.toFixed(2)}`, mapX + 17, mapY + 21, c.train, 9);
+        fillRoundRect(ctx, mapX + mapW - 122, mapY + 8, 114, 25, 7, c.surface, c.line);
+        label(ctx, "V0: 50–100 cities", mapX + mapW - 65, mapY + 21, c.ink, 8, 700, "center");
+      }
+      const routeSequence = [...tour, tour[0]];
+      if (compact) {
+        label(ctx, "route order · closes at start", 24, h - 68, c.muted, 11, 680);
+        mono(ctx, routeSequence.slice(0, 8).join(" → "), 24, h - 43, c.ink, 10.5);
+        mono(ctx, routeSequence.slice(8).join(" → "), 24, h - 20, c.ink, 10.5);
+      } else {
+        label(ctx, "route order · closes at start", 26, h - 58, c.muted, 11, 680);
+        mono(ctx, routeSequence.join(" → "), 26, h - 31, c.ink, 10.5);
+      }
+    }
+
+    function validFir(signal, taps) {
+      const output = [];
+      for (let i = taps.length - 1; i < signal.length; i += 1) {
+        output.push(taps.reduce((sum, tap, k) => sum + tap * signal[i - k], 0));
+      }
+      return output;
+    }
+
+    function mse(a, b) {
+      const length = Math.min(a.length, b.length);
+      return a.slice(0, length).reduce((sum, value, index) => sum + (value - b[index]) ** 2, 0) / length;
+    }
+
+    function roughness(values) {
+      if (values.length < 3) return 0;
+      return values.slice(2).reduce((sum, value, index) => sum + (value - 2 * values[index + 1] + values[index]) ** 2, 0) / (values.length - 2);
+    }
+
+    function bestLag(reference, values, maxLag = 4) {
+      let best = { lag: 0, error: Infinity };
+      for (let lag = -maxLag; lag <= maxLag; lag += 1) {
+        const pairs = [];
+        values.forEach((value, index) => {
+          const referenceIndex = index + lag;
+          if (referenceIndex >= 0 && referenceIndex < reference.length) pairs.push([value, reference[referenceIndex]]);
+        });
+        const error = pairs.reduce((sum, [a, b]) => sum + (a - b) ** 2, 0) / pairs.length;
+        if (error < best.error) best = { lag, error };
+      }
+      return best.lag;
+    }
+
+    function renderSignal(ctx, w, h, c) {
+      const samples = 54;
+      const clean = Array.from({ length: samples }, (_, i) => 0.48 + 0.22 * Math.sin(i * 0.23) + 0.10 * Math.sin(i * 0.61));
+      const noisePattern = [0.08,-0.12,0.05,0.14,-0.07,0.10,-0.04,-0.09];
+      const noisy = clean.map((value, i) => value + noisePattern[i % noisePattern.length]);
+      const taps = [0.12, 0.20, 0.36, 0.20, 0.12];
+      const filtered = validFir(noisy, taps);
+      const alignedClean = clean.slice(taps.length - 1);
+      const plot = { x: 28, y: 28, width: w - 176, height: 180 };
+      drawAxes(ctx, plot.x, plot.y, plot.width, plot.height, c);
+      const mapSeries = (values) => values.map((value, index) => [
+        plot.x + index / (values.length - 1) * plot.width,
+        plot.y + plot.height - value * plot.height
+      ]);
+      drawPolyline(ctx, mapSeries(alignedClean), c.ink, 2.2);
+      drawPolyline(ctx, mapSeries(noisy.slice(taps.length - 1)), c.muted, 1.1, [3, 4]);
+      drawPolyline(ctx, mapSeries(filtered), c.train, 2.3);
+      label(ctx, "clean", plot.x + 6, 17, c.ink, 10, 650);
+      label(ctx, "noisy", plot.x + 64, 17, c.muted, 10, 650);
+      label(ctx, "filtered", plot.x + 121, 17, c.train, 10, 650);
+      const metricX = plot.x + plot.width + 22;
+      const metrics = [
+        ["MSE ↓", mse(filtered, alignedClean).toFixed(4)],
+        ["|lag| ↓", `${Math.abs(bestLag(alignedClean, filtered))} samples`],
+        ["roughness ↓", roughness(filtered).toFixed(4)]
+      ];
+      metrics.forEach(([name, value], index) => {
+        fillRoundRect(ctx, metricX, 35 + index * 53, 120, 42, 9, c.surface, c.line);
+        label(ctx, name, metricX + 10, 48 + index * 53, c.muted, 9, 700);
+        mono(ctx, value, metricX + 10, 66 + index * 53, c.ink, 10);
+      });
+      label(ctx, "FIR coefficient vector", 28, h - 52, c.muted, 11, 680);
+      mathText(ctx, `[${taps.map((tap) => tap.toFixed(2)).join(",  ")}]`, 28, h - 27, c.ink, w < 430 ? 12 : 14, "left", 500);
+    }
+
+    function renderPrism(ctx, w, h, c) {
+      const capacity = 80;
+      const models = [
+        { id: "A", size: 20, rate: 4, slo: 2, gpu: 0 },
+        { id: "B", size: 10, rate: 2, slo: 1, gpu: 1 },
+        { id: "C", size: 30, rate: 3, slo: 3, gpu: 1 },
+        { id: "D", size: 24, rate: 3, slo: 2, gpu: 2 },
+        { id: "E", size: 16, rate: 1, slo: 1, gpu: 2 }
+      ];
+      const gpuCount = 3;
+      const pressures = Array.from({ length: gpuCount }, (_, gpu) => {
+        const assigned = models.filter((model) => model.gpu === gpu);
+        const used = assigned.reduce((sum, model) => sum + model.size, 0);
+        const load = assigned.reduce((sum, model) => sum + model.rate / model.slo, 0);
+        return { used, pressure: load / (capacity - used), assigned };
+      });
+      const worst = pressures.reduce((best, item, index) => item.pressure > pressures[best].pressure ? index : best, 0);
+      const compact = w < 430;
+      const gap = compact ? 10 : 18;
+      const outer = compact ? 14 : 26;
+      const boxW = (w - outer * 2 - gap * 2) / 3;
+      pressures.forEach((gpu, index) => {
+        const x = outer + index * (boxW + gap);
+        const y = compact ? 30 : 36;
+        const boxH = compact ? 184 : 190;
+        fillRoundRect(ctx, x, y, boxW, boxH, 12, c.surface, index === worst ? c.danger : c.line);
+        label(ctx, `GPU ${index}`, x + (compact ? 8 : 12), y + 16, c.ink, compact ? 9 : 11, 750);
+        label(ctx, `${gpu.used}/${capacity} GB`, compact ? x + 8 : x + boxW - 12, y + (compact ? 34 : 18), c.muted, compact ? 8 : 9, 600, compact ? "left" : "right");
+        let modelY = y + boxH - 22;
+        gpu.assigned.forEach((model, modelIndex) => {
+          const modelH = model.size / capacity * (compact ? 105 : 128);
+          modelY -= modelH;
+          fillRoundRect(ctx, x + (compact ? 7 : 12), modelY, boxW - (compact ? 14 : 24), modelH - 4, 6, modelIndex % 2 ? c.accentSoft : c.surface, c.train);
+          label(ctx, compact ? model.id : `Model ${model.id}`, x + (compact ? boxW / 2 : 20), modelY + (modelH - 4) / 2, c.ink, compact ? 8 : 9, 680, compact ? "center" : "left");
+        });
+        const gaugeY = y + boxH + (compact ? 29 : 34);
+        ctx.strokeStyle = c.line;
+        ctx.lineWidth = 5;
+        ctx.beginPath();
+        ctx.arc(x + boxW / 2, gaugeY, compact ? 16 : 20, Math.PI, 0);
+        ctx.stroke();
+        ctx.strokeStyle = index === worst ? c.danger : c.train;
+        ctx.beginPath();
+        ctx.arc(x + boxW / 2, gaugeY, compact ? 16 : 20, Math.PI, Math.PI + Math.min(1, gpu.pressure / 0.1) * Math.PI);
+        ctx.stroke();
+        mono(ctx, gpu.pressure.toFixed(3), x + boxW / 2, gaugeY + 10, index === worst ? c.danger : c.ink, 9, "center");
+        if (index === worst) label(ctx, "worst", x + boxW / 2, gaugeY + (compact ? 27 : 32), c.danger, 9, 750, "center");
+      });
+    }
+
+    function linearConvolution(a, b) {
+      const result = Array(a.length + b.length - 1).fill(0);
+      a.forEach((x, i) => b.forEach((y, j) => { result[i + j] += x * y; }));
+      return result;
+    }
+
+    function fullCorrelation(a, b) {
+      const output = [];
+      for (let shift = -(b.length - 1); shift <= a.length - 1; shift += 1) {
+        let sum = 0;
+        a.forEach((value, i) => {
+          const j = i - shift;
+          if (j >= 0 && j < b.length) sum += value * b[j];
+        });
+        output.push({ shift, value: sum });
+      }
+      return output;
+    }
+
+    function renderCorrelation(ctx, w, h, c) {
+      const divider = w / 2;
+      const compact = w < 430;
+      ctx.strokeStyle = c.line;
+      ctx.beginPath();
+      ctx.moveTo(divider, 20);
+      ctx.lineTo(divider, h - 20);
+      ctx.stroke();
+
+      const a = [0.08, 0.24, 0.58, 0.92, 0.66, 0.28, 0.10];
+      const convolution = linearConvolution(a, a);
+      const peak = Math.max(...convolution);
+      const peakIndex = convolution.indexOf(peak);
+      const acRatio = 2 * a.length * peak / a.reduce((sum, value) => sum + value, 0) ** 2;
+      label(ctx, compact ? "AC1" : "AC1 · self-convolution", 24, 24, c.ink, compact ? 10 : 11, 750);
+      const leftPlot = { x: 26, y: 56, width: divider - 50, height: 160 };
+      drawAxes(ctx, leftPlot.x, leftPlot.y, leftPlot.width, leftPlot.height, c);
+      const convPoints = convolution.map((value, index) => [
+        leftPlot.x + index / (convolution.length - 1) * leftPlot.width,
+        leftPlot.y + leftPlot.height - value / peak * (leftPlot.height - 12)
+      ]);
+      drawPolyline(ctx, convPoints, c.train, 2.3);
+      const px = convPoints[peakIndex][0];
+      const py = convPoints[peakIndex][1];
+      ctx.fillStyle = c.gold;
+      ctx.beginPath();
+      ctx.arc(px, py, 4.5, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.setLineDash([3, 4]);
+      ctx.strokeStyle = c.gold;
+      ctx.beginPath();
+      ctx.moveTo(px, py);
+      ctx.lineTo(px, leftPlot.y + leftPlot.height);
+      ctx.stroke();
+      ctx.setLineDash([]);
+      mono(ctx, `ratio ${acRatio.toFixed(3)}`, px, py - 13, c.gold, compact ? 8 : 9, "center");
+
+      const hValues = [0.10,0.30,0.70,0.90,0.80,0.70,0.60,0.40,0.30,0.20];
+      const complement = hValues.map((value) => 1 - value);
+      const correlations = fullCorrelation(hValues, complement);
+      const worst = correlations.reduce((best, item) => item.value > best.value ? item : best, correlations[0]);
+      const dx = 2 / hValues.length;
+      label(ctx, compact ? "Overlap" : "Minimum overlap", divider + 22, 24, c.ink, compact ? 10 : 11, 750);
+      const right = { x: divider + 24, y: 58, width: divider - 48, height: 157 };
+      const barW = right.width / hValues.length;
+      hValues.forEach((value, i) => {
+        const shiftedIndex = i - worst.shift;
+        const comp = shiftedIndex >= 0 && shiftedIndex < complement.length ? complement[shiftedIndex] : 0;
+        const x = right.x + i * barW;
+        const hHeight = value * right.height;
+        const cHeight = comp * right.height;
+        ctx.fillStyle = c.accentSoft;
+        ctx.fillRect(x + 2, right.y + right.height - hHeight, barW - 4, hHeight);
+        ctx.fillStyle = c.test;
+        ctx.globalAlpha = 0.32;
+        ctx.fillRect(x + 2, right.y + right.height - cHeight, barW - 4, cHeight);
+        ctx.globalAlpha = 1;
+        const overlap = value * comp * right.height;
+        ctx.fillStyle = c.gold;
+        ctx.globalAlpha = 0.42;
+        ctx.fillRect(x + 2, right.y + right.height - overlap, barW - 4, overlap);
+        ctx.globalAlpha = 1;
+      });
+      ctx.strokeStyle = c.strongLine;
+      ctx.strokeRect(right.x, right.y, right.width, right.height);
+      mono(ctx, `worst k = ${worst.shift}`, right.x, h - 59, c.test, compact ? 8 : 9);
+      mono(ctx, `max·dx = ${(worst.value * dx).toFixed(3)}`, right.x, h - 42, c.gold, compact ? 8 : 9);
+    }
+
+    function triangleArea(a, b, d) {
+      return Math.abs((b[0] - a[0]) * (d[1] - a[1]) - (b[1] - a[1]) * (d[0] - a[0])) / 2;
+    }
+
+    function renderHeilbronn(ctx, w, h, c) {
+      const points = [[-0.88,0.05],[0.90,0.04],[0,0.94],[-0.48,0.28],[0.42,0.24],[-0.15,0.18],[0.10,0.42],[-0.28,0.55],[0.25,0.64],[0.02,0.72],[0.55,0.15]];
+      let minimum = { area: Infinity, triple: [] };
+      for (let i = 0; i < points.length; i += 1) {
+        for (let j = i + 1; j < points.length; j += 1) {
+          for (let k = j + 1; k < points.length; k += 1) {
+            const area = triangleArea(points[i], points[j], points[k]);
+            if (area < minimum.area) minimum = { area, triple: [i, j, k] };
+          }
+        }
+      }
+      const compact = w < 430;
+      const tri = { left: compact ? 22 : 36, right: Math.min(w * (compact ? 0.63 : 0.72), 400), top: 26, bottom: h - 34 };
+      const center = (tri.left + tri.right) / 2;
+      const half = (tri.right - tri.left) / 2;
+      const map = ([x, y]) => [center + x * half, tri.bottom - y * (tri.bottom - tri.top)];
+      ctx.fillStyle = c.surface;
+      ctx.strokeStyle = c.strongLine;
+      ctx.lineWidth = 1.5;
+      ctx.beginPath();
+      ctx.moveTo(center, tri.top);
+      ctx.lineTo(tri.right, tri.bottom);
+      ctx.lineTo(tri.left, tri.bottom);
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+      const highlight = minimum.triple.map((index) => map(points[index]));
+      ctx.fillStyle = c.gold;
+      ctx.globalAlpha = 0.26;
+      ctx.beginPath();
+      ctx.moveTo(...highlight[0]);
+      ctx.lineTo(...highlight[1]);
+      ctx.lineTo(...highlight[2]);
+      ctx.closePath();
+      ctx.fill();
+      ctx.globalAlpha = 1;
+      ctx.strokeStyle = c.gold;
+      ctx.lineWidth = 2;
+      ctx.stroke();
+      points.forEach((point, index) => {
+        const [x, y] = map(point);
+        ctx.beginPath();
+        ctx.arc(x, y, minimum.triple.includes(index) ? 5.5 : 4.5, 0, Math.PI * 2);
+        ctx.fillStyle = minimum.triple.includes(index) ? c.gold : c.train;
+        ctx.fill();
+        ctx.strokeStyle = c.surface;
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+      });
+      const infoX = tri.right + (compact ? 13 : 18);
+      label(ctx, compact ? "unit area" : "unit-area domain", infoX, 67, c.ink, compact ? 9 : 11, 700);
+      label(ctx, "11 points", infoX, 92, c.muted, 10, 600);
+      mono(ctx, "165 triples", infoX, 126, c.muted, 10);
+      label(ctx, compact ? "min area" : "minimum", infoX, 164, c.gold, 10, 700);
+      mono(ctx, `area ${minimum.area.toFixed(4)}`, infoX, 184, c.ink, 10);
+      label(ctx, compact ? "computed toy" : "computed from", infoX, 215, c.muted, 9, 550);
+      if (!compact) label(ctx, "shown points", infoX, 231, c.muted, 9, 550);
+    }
+
+    function renderSumDifference(ctx, w, h, c) {
+      const U = [0, 1, 4, 10, 12];
+      const sums = [...new Set(U.flatMap((a) => U.map((b) => a + b)))].sort((a, b) => a - b);
+      const diffs = [...new Set(U.flatMap((a) => U.map((b) => a - b)))].sort((a, b) => a - b);
+      const axisX = 92;
+      const axisW = w - 126;
+      const rows = [
+        { name: "U", values: U, min: 0, max: 24, y: 58, color: c.ink },
+        { name: "U + U", values: sums, min: 0, max: 24, y: 132, color: c.train },
+        { name: "U − U", values: diffs, min: -12, max: 12, y: 208, color: c.test }
+      ];
+      rows.forEach((row) => {
+        label(ctx, row.name, axisX - 15, row.y, row.color, 11, 750, "right");
+        ctx.strokeStyle = c.line;
+        ctx.beginPath();
+        ctx.moveTo(axisX, row.y);
+        ctx.lineTo(axisX + axisW, row.y);
+        ctx.stroke();
+        for (let value = row.min; value <= row.max; value += 2) {
+          const x = axisX + (value - row.min) / (row.max - row.min) * axisW;
+          ctx.strokeStyle = c.line;
+          ctx.beginPath();
+          ctx.moveTo(x, row.y - 3);
+          ctx.lineTo(x, row.y + 3);
+          ctx.stroke();
+        }
+        row.values.forEach((value) => {
+          const x = axisX + (value - row.min) / (row.max - row.min) * axisW;
+          ctx.beginPath();
+          ctx.arc(x, row.y, row.name === "U" ? 5 : 4, 0, Math.PI * 2);
+          ctx.fillStyle = row.color;
+          ctx.fill();
+        });
+        mono(ctx, `${row.min}`, axisX, row.y + 19, c.muted, 8, "center");
+        mono(ctx, `${row.max}`, axisX + axisW, row.y + 19, c.muted, 8, "center");
+        mono(ctx, `|·| = ${row.values.length}`, axisX + axisW, row.y - 17, row.color, 9, "right");
+      });
+    }
+
+    function renderFactorial(ctx, w, h, c) {
+      const factors = [2,2,2,2,2,2,2,3,3,5,7];
+      const assignment = [4,4,4,5,6,7,7,2,3,1,0];
+      const bucketCount = 8;
+      const buckets = Array.from({ length: bucketCount }, () => []);
+      factors.forEach((factor, index) => buckets[assignment[index]].push(factor));
+      const products = buckets.map((bucket) => bucket.reduce((product, value) => product * value, 1));
+      const minProduct = Math.min(...products);
+      label(ctx, "prime factors of 8!", 26, 25, c.ink, 11, 750);
+      const factorText = (values) => values.join(" × ");
+      if (w < 430) {
+        mono(ctx, factorText(factors.slice(0, 6)), 26, 50, c.ink, 10.5);
+        mono(ctx, factorText(factors.slice(6)), 26, 72, c.ink, 10.5);
+      } else {
+        mono(ctx, factorText(factors), 26, 53, c.ink, 11);
+      }
+      const chartY = 103;
+      const chartH = 130;
+      const chartX = 32;
+      const chartW = w - 64;
+      const barGap = 7;
+      const barW = (chartW - barGap * (bucketCount - 1)) / bucketCount;
+      const maxLog = Math.max(...products.map(Math.log));
+      products.forEach((product, index) => {
+        const height = maxLog === 0 ? 0 : Math.log(product) / maxLog * chartH;
+        const x = chartX + index * (barW + barGap);
+        const isMinimum = product === minProduct;
+        fillRoundRect(ctx, x, chartY + chartH - height, barW, Math.max(3, height), 5, isMinimum ? c.gold : c.accentSoft, isMinimum ? c.gold : c.train);
+        mono(ctx, `P${index + 1}`, x + barW / 2, chartY + chartH + 17, c.muted, 8, "center");
+        mono(ctx, product, x + barW / 2, chartY + chartH - height - 11, isMinimum ? c.gold : c.ink, 9, "center");
+      });
+      label(ctx, `bottleneck = ${minProduct}`, chartX, h - 46, c.gold, 10, 700);
+      label(ctx, "bar height = log product", chartX + chartW, h - 46, c.muted, 9, 600, "right");
+    }
+
+    function renderBinPacking(ctx, w, h, c) {
+      const capacity = 1;
+      const previousBins = [[0.62, 0.38], [0.47, 0.29], []];
+      const current = 0.22;
+      const priorities = previousBins.map((bin) => {
+        const remaining = capacity - bin.reduce((sum, value) => sum + value, 0);
+        return remaining >= current ? -(remaining - current) : -Infinity;
+      });
+      let selected = priorities.indexOf(Math.max(...priorities));
+      if (selected < 0 || !Number.isFinite(priorities[selected])) {
+        previousBins.push([]);
+        selected = previousBins.length - 1;
+      }
+      const stream = [0.62, 0.47, 0.38, 0.29, current, null, null];
+      label(ctx, "arrival order", 24, 24, c.ink, 11, 750);
+      const tokenW = Math.min(48, (w - 48) / stream.length);
+      ctx.strokeStyle = c.line;
+      ctx.lineWidth = 1.2;
+      ctx.beginPath();
+      ctx.moveTo(24 + tokenW / 2, 58);
+      ctx.lineTo(24 + (stream.length - 0.5) * tokenW, 58);
+      ctx.stroke();
+      stream.forEach((item, index) => {
+        const isCurrent = index === 4;
+        ctx.globalAlpha = index > 4 ? 0.34 : 1;
+        const x = 24 + index * tokenW + tokenW / 2;
+        ctx.beginPath();
+        ctx.arc(x, 58, isCurrent ? 7 : 5, 0, Math.PI * 2);
+        ctx.fillStyle = isCurrent ? c.gold : c.surface;
+        ctx.fill();
+        ctx.strokeStyle = isCurrent ? c.gold : c.strongLine;
+        ctx.stroke();
+        mono(ctx, item === null ? "?" : item.toFixed(2), x, 39, isCurrent ? c.gold : c.ink, 10.5, "center");
+        ctx.globalAlpha = 1;
+      });
+      label(ctx, "current item", 24 + 4 * tokenW + (tokenW - 6) / 2, 88, c.gold, 11, 750, "center");
+      const binCount = previousBins.length;
+      const gap = binCount > 3 ? 10 : 22;
+      const binW = Math.min(112, (w - 64 - gap * (binCount - 1)) / binCount);
+      const binH = 132;
+      const binY = 140;
+      previousBins.forEach((items, index) => {
+        const x = 32 + index * (binW + gap);
+        ctx.strokeStyle = index === selected ? c.gold : c.strongLine;
+        ctx.lineWidth = index === selected ? 2 : 1.2;
+        ctx.strokeRect(x, binY, binW, binH);
+        let bottom = binY + binH;
+        items.forEach((item, itemIndex) => {
+          const height = item * binH;
+          bottom -= height;
+          ctx.fillStyle = itemIndex % 2 ? c.accentSoft : c.train;
+          ctx.globalAlpha = itemIndex % 2 ? 1 : 0.64;
+          ctx.fillRect(x + 1, bottom, binW - 2, height - 1);
+          ctx.globalAlpha = 1;
+        });
+        const load = items.reduce((sum, value) => sum + value, 0);
+        mono(ctx, `${load.toFixed(2)} / 1.00`, x + binW / 2, binY + binH + 17, c.muted, 8, "center");
+        if (index === selected) {
+          const itemHeight = current * binH;
+          ctx.setLineDash([4, 3]);
+          ctx.strokeStyle = c.gold;
+          ctx.strokeRect(x + 3, bottom - itemHeight, binW - 6, itemHeight - 2);
+          ctx.setLineDash([]);
+          label(ctx, "selected by best-fit", x + binW / 2, binY - 17, c.gold, 11, 750, "center");
+        }
+      });
+    }
+
+    function renderDeterminant(ctx, w, h, c) {
+      const n = 29;
+      const compact = w < 430;
+      const size = compact ? Math.min(164, w - 96) : Math.min(250, h - 66, w * 0.47);
+      const x0 = compact ? (w - size) / 2 : 28;
+      const y0 = compact ? 18 : 34;
+      const cell = size / n;
+      for (let row = 0; row < n; row += 1) {
+        for (let col = 0; col < n; col += 1) {
+          const sign = ((row * col + 3 * row + 5 * col + (row ^ col)) % 7) < 3 ? 1 : -1;
+          ctx.fillStyle = sign === 1 ? c.train : c.test;
+          ctx.fillRect(x0 + col * cell, y0 + row * cell, Math.ceil(cell), Math.ceil(cell));
+        }
+      }
+      ctx.strokeStyle = c.strongLine;
+      ctx.lineWidth = 1.25;
+      ctx.strokeRect(x0, y0, size, size);
+
+    }
+
+    function progressionTraces(sequence, step) {
+      const values = [];
+      let sum = 0;
+      for (let index = step - 1; index < sequence.length; index += step) {
+        sum += sequence[index];
+        values.push(sum);
+      }
+      return values;
+    }
+
+    function renderDiscrepancy(ctx, w, h, c) {
+      const compact = w < 430;
+      const sequence = [1,-1,1,-1,1,1,-1,1,-1,1,-1,1,-1,-1,-1,-1];
+      const n = sequence.length;
+      const tileGap = 3;
+      const tileW = Math.min(27, (w - 48 - tileGap * (n - 1)) / n);
+      const startX = 24;
+      sequence.forEach((value, index) => {
+        fillRoundRect(ctx, startX + index * (tileW + tileGap), 28, tileW, 27, 5, value > 0 ? c.train : c.test);
+        mono(ctx, value > 0 ? "+" : "−", startX + index * (tileW + tileGap) + tileW / 2, 42, c.surface, 11, "center");
+        if ((index + 1) % 4 === 0) mono(ctx, index + 1, startX + index * (tileW + tileGap) + tileW / 2, 68, c.muted, 7, "center");
+      });
+      const steps = [1, 2, 3];
+      const laneX = 72;
+      const laneW = w * (compact ? 0.23 : 0.39);
+      steps.forEach((step, laneIndex) => {
+        const y = 103 + laneIndex * 55;
+        mono(ctx, `d=${step}`, 24, y, c.muted, 9);
+        const indices = [];
+        for (let index = step; index <= n; index += step) indices.push(index);
+        indices.forEach((index, position) => {
+          const x = laneX + (index - 1) / (n - 1) * laneW;
+          ctx.beginPath();
+          ctx.arc(x, y, 4, 0, Math.PI * 2);
+          ctx.fillStyle = sequence[index - 1] > 0 ? c.train : c.test;
+          ctx.fill();
+          if (position < indices.length - 1) {
+            const nextX = laneX + (indices[position + 1] - 1) / (n - 1) * laneW;
+            ctx.strokeStyle = c.line;
+            ctx.beginPath();
+            ctx.moveTo(x + 5, y);
+            ctx.lineTo(nextX - 5, y);
+            ctx.stroke();
+          }
+        });
+      });
+      const trace = { x: w * (compact ? 0.55 : 0.58), y: 108, width: w * (compact ? 0.40 : 0.36), height: 132 };
+      ctx.fillStyle = c.accentSoft;
+      ctx.globalAlpha = 0.52;
+      ctx.fillRect(trace.x, trace.y, trace.width, trace.height);
+      ctx.globalAlpha = 1;
+      ctx.strokeStyle = c.line;
+      ctx.strokeRect(trace.x, trace.y, trace.width, trace.height);
+      [-2, 0, 2].forEach((value) => {
+        const y = trace.y + trace.height - (value + 2) / 4 * trace.height;
+        ctx.strokeStyle = value === 0 ? c.strongLine : c.line;
+        ctx.beginPath();
+        ctx.moveTo(trace.x, y);
+        ctx.lineTo(trace.x + trace.width, y);
+        ctx.stroke();
+        mono(ctx, value, trace.x - 8, y, c.muted, 8, "right");
+      });
+      steps.forEach((step, index) => {
+        const values = progressionTraces(sequence, step);
+        const points = values.map((value, i) => [
+          trace.x + (i + 1) / (values.length + 1) * trace.width,
+          trace.y + trace.height - (value + 2) / 4 * trace.height
+        ]);
+        drawPolyline(ctx, points, [c.train, c.test, c.gold][index], 1.8);
+      });
+      label(ctx, compact ? "sums" : "running sums", trace.x, 91, c.ink, 11, 700);
+      label(ctx, compact ? "|S| ≤ 2" : "valid band: |S| ≤ 2", trace.x + trace.width, 91, c.muted, 11, 600, "right");
+    }
+
+    function hasIsoscelesTriple(points) {
+      for (let i = 0; i < points.length; i += 1) {
+        for (let j = i + 1; j < points.length; j += 1) {
+          for (let k = j + 1; k < points.length; k += 1) {
+            const squared = (a, b) => (a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2;
+            const distances = [squared(points[i], points[j]), squared(points[i], points[k]), squared(points[j], points[k])];
+            if (new Set(distances).size < 3) return true;
+          }
+        }
+      }
+      return false;
+    }
+
+    function renderIsosceles(ctx, w, h, c) {
+      const points = [[0,0],[1,0],[3,0],[4,0],[5,1],[6,1],[3,4],[5,5]];
+      const compact = w < 430;
+      const grid = { x: compact ? 22 : 32, y: 24, size: Math.min(h - 48, w * (compact ? 0.47 : 0.52)), n: 7 };
+      for (let i = 0; i < grid.n; i += 1) {
+        const x = grid.x + i / (grid.n - 1) * grid.size;
+        const y = grid.y + i / (grid.n - 1) * grid.size;
+        ctx.strokeStyle = c.line;
+        ctx.lineWidth = 0.8;
+        ctx.beginPath();
+        ctx.moveTo(x, grid.y);
+        ctx.lineTo(x, grid.y + grid.size);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(grid.x, y);
+        ctx.lineTo(grid.x + grid.size, y);
+        ctx.stroke();
+      }
+      points.forEach(([px, py]) => {
+        const x = grid.x + px / (grid.n - 1) * grid.size;
+        const y = grid.y + grid.size - py / (grid.n - 1) * grid.size;
+        ctx.beginPath();
+        ctx.arc(x, y, 6, 0, Math.PI * 2);
+        ctx.fillStyle = c.test;
+        ctx.fill();
+        ctx.strokeStyle = c.surface;
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+      });
+      const valid = !hasIsoscelesTriple(points);
+      const glyphX = grid.x + grid.size + (compact ? 65 : 72);
+      const glyphY = 92;
+      ctx.strokeStyle = c.danger;
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(glyphX, glyphY - 35);
+      ctx.lineTo(glyphX - 40, glyphY + 35);
+      ctx.lineTo(glyphX + 40, glyphY + 35);
+      ctx.closePath();
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.moveTo(glyphX - 14, glyphY - 10);
+      ctx.lineTo(glyphX - 7, glyphY - 5);
+      ctx.moveTo(glyphX + 14, glyphY - 10);
+      ctx.lineTo(glyphX + 7, glyphY - 5);
+      ctx.stroke();
+      ctx.lineWidth = 4;
+      ctx.beginPath();
+      ctx.moveTo(glyphX - 48, glyphY - 46);
+      ctx.lineTo(glyphX + 48, glyphY + 47);
+      ctx.stroke();
+      label(ctx, compact ? "forbidden triple" : "no equal-side triple", glyphX, glyphY + 67, c.danger, compact ? 9 : 10, 700, "center");
+      label(ctx, `${points.length} selected points`, glyphX, glyphY + 104, c.ink, compact ? 10 : 12, 700, "center");
+      label(ctx, valid ? "toy subset valid ✓" : "toy subset invalid", glyphX, glyphY + 126, valid ? c.test : c.danger, compact ? 9 : 10, 650, "center");
+    }
+
+    function renderSymbolicRegressionCompact(ctx, w, h, c) {
+      const expression = (x) => 0.42 * x * x + Math.sin(x) + 0.35;
+      const noise = [0.04,-0.03,0.02,-0.02,0.01,0.03,-0.04,0.02,-0.01];
+      const observedX = [-2,-1.5,-1,-0.5,0,0.5,1,1.5,2];
+      const left = { x: 18, y: 43, width: 88, height: 158 };
+      const right = { x: w - 106, y: 43, width: 88, height: 158 };
+      const mapX = (panel, x) => panel.x + (x + 2.2) / 4.4 * panel.width;
+      const mapY = (panel, y) => panel.y + panel.height - (y + 0.7) / 3.4 * panel.height;
+      drawAxes(ctx, left.x, left.y, left.width, left.height, c);
+      drawAxes(ctx, right.x, right.y, right.width, right.height, c);
+      observedX.forEach((x, index) => {
+        ctx.beginPath();
+        ctx.arc(mapX(left, x), mapY(left, expression(x) + noise[index]), 3, 0, Math.PI * 2);
+        ctx.fillStyle = c.blue;
+        ctx.fill();
+      });
+      const curve = Array.from({ length: 60 }, (_, index) => {
+        const x = -2.2 + index / 59 * 4.4;
+        return [mapX(right, x), mapY(right, expression(x))];
+      });
+      drawPolyline(ctx, curve, c.test, 2);
+      [-1.7,-1.0,-0.3,0.6,1.3,1.9].forEach((x, index) => {
+        ctx.beginPath();
+        ctx.arc(mapX(right, x), mapY(right, expression(x) + [0.03,-0.02,0.01,-0.03,0.02,-0.01][index]), 3, 0, Math.PI * 2);
+        ctx.fillStyle = c.blue;
+        ctx.fill();
+      });
+      label(ctx, "observations", left.x, 23, c.ink, 9, 700);
+      label(ctx, "held-out", right.x, 23, c.ink, 9, 700);
+      label(ctx, "V0: Mini + whitelisted operators", 18, 232, c.muted, 8, 600);
+      mono(ctx, "NMSE ↓", right.x + right.width, 232, c.test, 10, "right");
+    }
+
+    function renderSymbolicRegression(ctx, w, h, c) {
+      if (w < 480) {
+        renderSymbolicRegressionCompact(ctx, w, h, c);
+        return;
+      }
+      const left = { x: 25, y: 39, width: w * 0.28, height: 170 };
+      drawAxes(ctx, left.x, left.y, left.width, left.height, c);
+      const observedX = [-2,-1.5,-1,-0.5,0,0.5,1,1.5,2];
+      const expression = (x) => 0.42 * x * x + Math.sin(x) + 0.35;
+      const noise = [0.04,-0.03,0.02,-0.02,0.01,0.03,-0.04,0.02,-0.01];
+      const xTo = (x) => left.x + (x + 2.2) / 4.4 * left.width;
+      const yTo = (y) => left.y + left.height - (y + 0.7) / 3.4 * left.height;
+      observedX.forEach((x, index) => {
+        ctx.beginPath();
+        ctx.arc(xTo(x), yTo(expression(x) + noise[index]), 3.5, 0, Math.PI * 2);
+        ctx.fillStyle = c.blue;
+        ctx.fill();
+      });
+      label(ctx, "scientific observations", left.x, 22, c.ink, 10, 700);
+      const astX = left.x + left.width + 44;
+      const right = { x: astX + 170, y: 39, width: w - astX - 194, height: 170 };
+      drawAxes(ctx, right.x, right.y, right.width, right.height, c);
+      const rightX = (x) => right.x + (x + 2.2) / 4.4 * right.width;
+      const rightY = (y) => right.y + right.height - (y + 0.7) / 3.4 * right.height;
+      const curve = Array.from({ length: 80 }, (_, index) => {
+        const x = -2.2 + index / 79 * 4.4;
+        return [rightX(x), rightY(expression(x))];
+      });
+      drawPolyline(ctx, curve, c.test, 2.2);
+      [-1.75,-1.25,-0.75,0.75,1.25,1.75].forEach((x, index) => {
+        ctx.beginPath();
+        ctx.arc(rightX(x), rightY(expression(x) + [0.03,-0.02,0.01,-0.03,0.02,-0.01][index]), 3, 0, Math.PI * 2);
+        ctx.fillStyle = c.blue;
+        ctx.fill();
+      });
+      label(ctx, "held-out prediction", right.x, 22, c.ink, 10, 700);
+      mono(ctx, "NMSE ↓", right.x + right.width, h - 34, c.test, 11, "right");
+      label(ctx, "V0: Mini subset + whitelisted operators", 25, h - 25, c.muted, 9, 600);
+    }
+
+    function renderCloudcast(ctx, w, h, c) {
+      const nodes = {
+        source: { x: 72, y: 140, label: "source" },
+        relayA: { x: w * 0.43, y: 94, label: "relay A" },
+        relayB: { x: w * 0.43, y: 194, label: "relay B" },
+        destA: { x: w - 72, y: 58, label: "dest 1" },
+        destB: { x: w - 72, y: 140, label: "dest 2" },
+        destC: { x: w - 72, y: 222, label: "dest 3" }
+      };
+      const paths = [
+        [nodes.source, nodes.relayA, nodes.destA],
+        [nodes.source, nodes.relayA, nodes.destB],
+        [nodes.source, nodes.relayB, nodes.destC]
+      ];
+      const colors = [c.train, c.test, c.gold];
+      paths.forEach((path) => {
+        colors.forEach((color, partitionIndex) => {
+          const offset = (partitionIndex - 1) * 4;
+          ctx.strokeStyle = color;
+          ctx.lineWidth = 3;
+          ctx.globalAlpha = 0.72;
+          ctx.beginPath();
+          ctx.moveTo(path[0].x, path[0].y + offset);
+          path.slice(1).forEach((node) => ctx.lineTo(node.x, node.y + offset));
+          ctx.stroke();
+          ctx.globalAlpha = 1;
+        });
+      });
+      Object.values(nodes).forEach((node) => {
+        fillRoundRect(ctx, node.x - 42, node.y - 20, 84, 40, 16, c.surface, c.line);
+        label(ctx, node.label, node.x, node.y, c.ink, 10, 700, "center");
+      });
+      if (w < 400) {
+        label(ctx, "shared relay trunks", w * 0.25, 22, c.muted, 9, 650, "center");
+        label(ctx, "complete routes", w * 0.75, 22, c.muted, 9, 650, "center");
+      } else {
+        label(ctx, "partitions share relay trunks", w * 0.25, 24, c.muted, 11, 650, "center");
+        label(ctx, "each partition reaches every destination", w * 0.72, 24, c.muted, 11, 650, "center");
+      }
+      ["P₁", "P₂", "P₃"].forEach((name, index) => {
+        fillRoundRect(ctx, 25 + index * 48, 245, 39, 23, 7, colors[index], null);
+        mono(ctx, name, 44 + index * 48, 257, c.surface, 9, "center");
+      });
+    }
+
+    function densityPoint(weights) {
+      const total = weights.reduce((sum, value) => sum + value, 0);
+      const p = weights.map((value) => value / total);
+      const s2 = p.reduce((sum, value) => sum + value ** 2, 0);
+      const s3 = p.reduce((sum, value) => sum + value ** 3, 0);
+      return { rho: 1 - s2, tau: 1 - 3 * s2 + 2 * s3 };
+    }
+
+    function densityEnvelope(points) {
+      const sorted = [{ rho: 0, tau: 0 }, ...points].sort((a, b) => a.rho - b.rho);
+      sorted.push({ rho: 1, tau: 1 });
+      const unique = sorted.filter((point, index) => index === 0 || Math.abs(point.rho - sorted[index - 1].rho) > 1e-9);
+      const segments = [];
+      let area = 0;
+      let maxGap = 0;
+      for (let i = 0; i < unique.length - 1; i += 1) {
+        const a = unique[i];
+        const b = unique[i + 1];
+        const width = b.rho - a.rho;
+        maxGap = Math.max(maxGap, width);
+        if (a.tau > b.tau) {
+          segments.push([a, { rho: b.rho, tau: a.tau }]);
+          area += a.tau * width;
+        } else {
+          const reach = a.tau + 3 * width;
+          if (reach <= b.tau + 1e-9) {
+            const end = { rho: b.rho, tau: reach };
+            segments.push([a, end]);
+            area += (a.tau + end.tau) * width / 2;
+          } else {
+            const rampWidth = Math.max(0, Math.min(width, (b.tau - a.tau) / 3));
+            const knee = { rho: a.rho + rampWidth, tau: b.tau };
+            segments.push([a, knee, b]);
+            area += (a.tau + b.tau) * rampWidth / 2 + b.tau * (width - rampWidth);
+          }
+        }
+      }
+      return { unique, segments, area, maxGap };
+    }
+
+    function renderEdgesTriangles(ctx, w, h, c) {
+      const rows = [
+        [9,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [5,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [4,2,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [3,2,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [2,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0],
+        [1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0]
+      ];
+      const points = rows.map(densityPoint);
+      const envelope = densityEnvelope(points);
+      const heat = { x: 22, y: 48, width: w * 0.31, height: 165 };
+      label(ctx, "20-weight rows", heat.x, 25, c.ink, 10, 750);
+      const cellW = heat.width / 20;
+      const cellH = heat.height / rows.length;
+      rows.forEach((row, rowIndex) => {
+        const max = Math.max(...row);
+        row.forEach((value, colIndex) => {
+          ctx.fillStyle = value === 0 ? c.surface : c.test;
+          ctx.globalAlpha = value === 0 ? 1 : 0.18 + 0.78 * value / max;
+          ctx.fillRect(heat.x + colIndex * cellW, heat.y + rowIndex * cellH, cellW - 1, cellH - 1);
+        });
+      });
+      ctx.globalAlpha = 1;
+      ctx.strokeStyle = c.line;
+      ctx.strokeRect(heat.x, heat.y, heat.width, heat.height);
+      arrow(ctx, heat.x + heat.width + 12, heat.y + heat.height / 2, heat.x + heat.width + 43, heat.y + heat.height / 2, c.strongLine);
+
+      const plot = { x: heat.x + heat.width + 60, y: 40, width: w - heat.x - heat.width - 87, height: 184 };
+      drawAxes(ctx, plot.x, plot.y, plot.width, plot.height, c);
+      const map = (point) => [plot.x + point.rho * plot.width, plot.y + plot.height - point.tau * plot.height];
+      ctx.fillStyle = c.accentSoft;
+      ctx.beginPath();
+      ctx.moveTo(plot.x, plot.y + plot.height);
+      envelope.segments.forEach((segment) => segment.forEach((point) => ctx.lineTo(...map(point))));
+      ctx.lineTo(plot.x + plot.width, plot.y + plot.height);
+      ctx.closePath();
+      ctx.fill();
+      envelope.segments.forEach((segment) => drawPolyline(ctx, segment.map(map), c.test, 2));
+      points.forEach((point) => {
+        const [x, y] = map(point);
+        ctx.beginPath();
+        ctx.arc(x, y, 4, 0, Math.PI * 2);
+        ctx.fillStyle = c.gold;
+        ctx.fill();
+        ctx.strokeStyle = c.surface;
+        ctx.stroke();
+      });
+      const gaps = envelope.unique.slice(0, -1).map((point, index) => ({ a: point, b: envelope.unique[index + 1], gap: envelope.unique[index + 1].rho - point.rho }));
+      const widest = gaps.reduce((best, gap) => gap.gap > best.gap ? gap : best, gaps[0]);
+      const bracketY = plot.y + plot.height + 18;
+      const x1 = plot.x + widest.a.rho * plot.width;
+      const x2 = plot.x + widest.b.rho * plot.width;
+      ctx.strokeStyle = c.gold;
+      ctx.beginPath();
+      ctx.moveTo(x1, bracketY - 4); ctx.lineTo(x1, bracketY + 4);
+      ctx.moveTo(x1, bracketY); ctx.lineTo(x2, bracketY);
+      ctx.moveTo(x2, bracketY - 4); ctx.lineTo(x2, bracketY + 4);
+      ctx.stroke();
+      mono(ctx, `max gap ${envelope.maxGap.toFixed(2)}`, (x1 + x2) / 2, bracketY + 13, c.gold, 8, "center");
+      fillRoundRect(ctx, plot.x + plot.width - 86, plot.y + 5, 76, 23, 6, c.surface, c.line);
+      mono(ctx, `area ${envelope.area.toFixed(2)}`, plot.x + plot.width - 18, plot.y + 17, c.test, 10.5, "right");
+      label(ctx, "edge density ρ", plot.x + plot.width / 2, h - 43, c.muted, 9, 600, "center");
+      ctx.save();
+      ctx.translate(plot.x - 15, plot.y + plot.height / 2);
+      ctx.rotate(-Math.PI / 2);
+      label(ctx, "triangle density", 0, 0, c.muted, 9, 600, "center");
+      ctx.restore();
+    }
+
+    const RENDERERS = {
+      circlePacking: renderCirclePacking,
+      beatAverage: renderBeatAverage,
+      tsp: renderTsp,
+      signal: renderSignal,
+      prism: renderPrism,
+      correlation: renderCorrelation,
+      heilbronn: renderHeilbronn,
+      sumDifference: renderSumDifference,
+      factorial: renderFactorial,
+      binPacking: renderBinPacking,
+      determinant: renderDeterminant,
+      discrepancy: renderDiscrepancy,
+      isosceles: renderIsosceles,
+      symbolicRegression: renderSymbolicRegression,
+      cloudcast: renderCloudcast,
+      edgesTriangles: renderEdgesTriangles
+    };
+
+    function renderCanvas(canvas) {
+      const renderer = RENDERERS[canvas.dataset.visual];
+      if (!renderer || canvas.closest(".benchmark-card").hidden) return;
+      const { ctx, width, height, colors } = setupCanvas(canvas);
+      renderer(ctx, width, height, colors);
+    }
+
+    function renderAllVisible() {
+      document.querySelectorAll("canvas[data-visual]").forEach(renderCanvas);
+    }
+
+    let resizeFrame = null;
+    const resizeObserver = new ResizeObserver(() => {
+      cancelAnimationFrame(resizeFrame);
+      resizeFrame = requestAnimationFrame(renderAllVisible);
+    });
+    document.querySelectorAll(".visual-wrap").forEach((visual) => resizeObserver.observe(visual));
+    const themeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    themeQuery.addEventListener?.("change", renderAllVisible);
+    renderAllVisible();
+  </script>
+</body>
+</html>
