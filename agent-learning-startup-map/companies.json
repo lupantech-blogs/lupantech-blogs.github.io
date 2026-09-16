@@ -1,16 +1,7 @@
 {
   "source": "https://breakoutlist.com/",
   "snapshot": "2026-09-16",
-  "methodology": {
-    "unit": "Company; one category per dimension",
-    "reviewDate": "2026-09-16",
-    "audience": "Noeri members",
-    "scope": "Public sources only; no private Noeri information",
-    "agentDefinition": "Software and embodied agents; product features and research programs included. Tools and general AI infrastructure are separate.",
-    "feedbackDefinition": "Described experience/results-to-update path for models, policies, code, knowledge, tools or experimental decisions. Human review and bounded demonstrations may be included.",
-    "limits": "Company claims were not independently reproduced. Other documented focus is not evidence of no internal AI. Curated list is not representative of all startups.",
-    "sourceLedger": "https://lupantech-blogs.github.io/agent-learning-startup-map/#company-ledger"
-  },
+  "methodology": "expanded-primary-source-review",
   "summary": {
     "agent": {
       "Agent products / models": 34,
@@ -59,7 +50,32 @@
       "homepageEvidence": "https://hone.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Agent products / models",
-      "previousImprovement": "Explicit learning / adaptation"
+      "previousImprovement": "Explicit learning / adaptation",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/hone.com.png",
+      "founders": [
+        {
+          "name": "Moritz Stephan",
+          "url": "https://x.com/moritz_stephan",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-moritz-stephan.jpg"
+        },
+        {
+          "name": "Carlo Kobe",
+          "url": "https://x.com/CarloWillem",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-carlokobe.jpg"
+        },
+        {
+          "name": "Oliver Brady",
+          "url": "https://x.com/oqbrady",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-oliver-brady-0bb008178.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Normal",
@@ -80,7 +96,27 @@
       "homepageEvidence": "https://normal.ai",
       "reviewed": "2026-09-16",
       "previousAgent": "Tools / data / infrastructure",
-      "previousImprovement": "Enabling tools / data"
+      "previousImprovement": "Enabling tools / data",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/normal.ai.png",
+      "founders": [
+        {
+          "name": "Anson Yu",
+          "url": "https://x.com/ansonyuu",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-anson-yu.jpg"
+        },
+        {
+          "name": "Hudhayfa Nazoordeen",
+          "url": "https://x.com/hudzah",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-hudzah.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Standard Intelligence",
@@ -101,7 +137,27 @@
       "homepageEvidence": "https://si.inc",
       "reviewed": "2026-09-16",
       "previousAgent": "Agent products / models",
-      "previousImprovement": "Research direction"
+      "previousImprovement": "Research direction",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/si.inc.png",
+      "founders": [
+        {
+          "name": "Galen Mead",
+          "url": "https://x.com/G413N",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-galen-mead.jpg"
+        },
+        {
+          "name": "Devansh Pandey",
+          "url": "https://x.com/devanshpandey",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-devansh-r-pandey.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Tacit Labs",
@@ -122,7 +178,27 @@
       "homepageEvidence": "https://tacitlabs.co",
       "reviewed": "2026-09-16",
       "previousAgent": "Agent products / models",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/tacitlabs.co.png",
+      "founders": [
+        {
+          "name": "Nicole Fitzgerald",
+          "url": "https://x.com/ninklefitz",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/ninklefitz.jpg"
+        },
+        {
+          "name": "Anne Marie Droste",
+          "url": "https://x.com/AmDroste",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/AmDroste.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "American Terawatt",
@@ -143,7 +219,32 @@
       "homepageEvidence": "https://www.americanterawatt.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/americanterawatt.com.png",
+      "founders": [
+        {
+          "name": "Anton Troynikov",
+          "url": "https://x.com/atroyn",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-anton-troynikov.jpg"
+        },
+        {
+          "name": "Robert Parker",
+          "url": "https://x.com/rslparker",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-robert-parker.jpg"
+        },
+        {
+          "name": "Ron Bhattacharyay",
+          "url": "https://x.com/aranibatta",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/bhattacharyay-keybase.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Conduit",
@@ -164,7 +265,27 @@
       "homepageEvidence": "https://condu.it",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/condu.it.png",
+      "founders": [
+        {
+          "name": "Clem von Stengel",
+          "url": "https://x.com/clemvonstengel",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-clem-von-stengel.jpg"
+        },
+        {
+          "name": "Rio Popper",
+          "url": "https://x.com/riopopper",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-rio-popper.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Convergent",
@@ -185,7 +306,32 @@
       "homepageEvidence": "https://convergent.dev",
       "reviewed": "2026-09-16",
       "previousAgent": "Tools / data / infrastructure",
-      "previousImprovement": "Enabling tools / data"
+      "previousImprovement": "Enabling tools / data",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/convergent.dev.svg",
+      "founders": [
+        {
+          "name": "Omkar Savant",
+          "url": "https://x.com/OmkarSavant_",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-omkarsavant.jpg"
+        },
+        {
+          "name": "Vivek Katara",
+          "url": "https://x.com/VivekKatara__",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-vivek-r-katara.jpg"
+        },
+        {
+          "name": "Debnil Sur",
+          "url": "https://x.com/debnilsur",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-debnil-sur.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Core Automation",
@@ -206,7 +352,27 @@
       "homepageEvidence": "https://www.coreauto.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Agent products / models",
-      "previousImprovement": "Research direction"
+      "previousImprovement": "Research direction",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/coreauto.com.png",
+      "founders": [
+        {
+          "name": "Jerry Tworek",
+          "url": "https://x.com/MillionInt",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/MillionInt.jpg"
+        },
+        {
+          "name": "Rohan Anil",
+          "url": "https://x.com/_arohan_",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/anil-sequoia-s16.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Engram",
@@ -227,7 +393,32 @@
       "homepageEvidence": "https://engram.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Tools / data / infrastructure",
-      "previousImprovement": "Explicit learning / adaptation"
+      "previousImprovement": "Explicit learning / adaptation",
+      "funding": {
+        "amount": "$98M",
+        "kind": "Total · Jun 2026",
+        "date": "2026-06-23",
+        "url": "https://engram.com/blog/introducing-engram"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/engram.com.png",
+      "founders": [
+        {
+          "name": "Dan Biderman",
+          "url": "https://x.com/dan_biderman",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-dan-biderman-066039202.jpg"
+        },
+        {
+          "name": "Sabri Eyuboglu",
+          "url": "https://x.com/EyubogluSabri",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-sabri-eyuboglu-21509bb2.jpg"
+        },
+        {
+          "name": "Jessy Lin",
+          "url": "https://x.com/realJessyLin",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-jessy-lin.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Instinct",
@@ -248,7 +439,22 @@
       "homepageEvidence": "https://instinct.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Agent products / models",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/instinct.com.png",
+      "founders": [
+        {
+          "name": "Noah Shinn",
+          "url": "https://x.com/noahrshinn",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-noah-shinn.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Keenable",
@@ -269,7 +475,27 @@
       "homepageEvidence": "https://keenable.ai",
       "reviewed": "2026-09-16",
       "previousAgent": "Tools / data / infrastructure",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/keenable.ai.png",
+      "founders": [
+        {
+          "name": "Andrey Styskin",
+          "url": "https://x.com/styskin",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/styskin.jpg"
+        },
+        {
+          "name": "Matthias Petri",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/petri-techcrunch-2026-d.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Lumaril",
@@ -290,7 +516,27 @@
       "homepageEvidence": "https://lumaril.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/lumaril.com.png",
+      "founders": [
+        {
+          "name": "Mark Elliot",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-elliotm.jpg"
+        },
+        {
+          "name": "Ben Duffield",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-benduffield.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Neion Bio",
@@ -311,7 +557,27 @@
       "homepageEvidence": "https://neionbio.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/neion.bio.png",
+      "founders": [
+        {
+          "name": "Dimi Kellari",
+          "url": "https://x.com/Dimkell",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-demetrioskellari.jpg"
+        },
+        {
+          "name": "Sam Levin",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-sam-levin-352105197.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Pangram Labs",
@@ -332,7 +598,27 @@
       "homepageEvidence": "https://www.pangram.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/pangram.com.png",
+      "founders": [
+        {
+          "name": "Max Spero",
+          "url": "https://x.com/max_spero_",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/max_spero_.jpg"
+        },
+        {
+          "name": "Bradley Emi",
+          "url": "https://x.com/bradley_emi",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-bradley-emi.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Quadrillion",
@@ -353,7 +639,22 @@
       "homepageEvidence": "https://quadrillion.ai",
       "reviewed": "2026-09-16",
       "previousAgent": "Agent products / models",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/quadrillion.ai.png",
+      "founders": [
+        {
+          "name": "E Chi",
+          "url": "https://x.com/echinaceous",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-~echi.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Re",
@@ -374,7 +675,37 @@
       "homepageEvidence": "https://re.xyz",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/re.xyz.png",
+      "founders": [
+        {
+          "name": "Karn Saroya",
+          "url": "https://x.com/karnsaroya",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-saroya.jpg"
+        },
+        {
+          "name": "Anand Dhillon",
+          "url": "https://x.com/AnandDhillon",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-ananddhillon.jpg"
+        },
+        {
+          "name": "Cliff White",
+          "url": "https://x.com/thecliffwhite",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-cliffawhite.jpg"
+        },
+        {
+          "name": "Ben Aneesh",
+          "url": "https://x.com/benaneesh",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-ben-aneesh.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Ricursive",
@@ -395,7 +726,27 @@
       "homepageEvidence": "https://ricursive.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "$335M",
+        "kind": "Total reported",
+        "date": "2026-09-16",
+        "url": "https://www.ricursive.com/"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/ricursive.com.ri.png",
+      "founders": [
+        {
+          "name": "Anna Goldie",
+          "url": "https://x.com/annadgoldie",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/annadgoldie.jpg"
+        },
+        {
+          "name": "Azalia Mirhoseini",
+          "url": "https://x.com/Azaliamirh",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/Azaliamirh.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Sail Research",
@@ -416,7 +767,27 @@
       "homepageEvidence": "https://www.sailresearch.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Tools / data / infrastructure",
-      "previousImprovement": "Enabling tools / data"
+      "previousImprovement": "Enabling tools / data",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/sailresearch.com.png",
+      "founders": [
+        {
+          "name": "Neil Movva",
+          "url": "https://x.com/neilmovva",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-neil-movva.jpg"
+        },
+        {
+          "name": "Samir Menon",
+          "url": "https://x.com/blintzbase",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-samir-menon-27954214b.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Trajectory",
@@ -437,7 +808,32 @@
       "homepageEvidence": "https://trajectory.ai",
       "reviewed": "2026-09-16",
       "previousAgent": "Tools / data / infrastructure",
-      "previousImprovement": "Explicit learning / adaptation"
+      "previousImprovement": "Explicit learning / adaptation",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/trajectory.ai.png",
+      "founders": [
+        {
+          "name": "Ronak Malde",
+          "url": "https://x.com/rronak_",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/rronak_.jpg"
+        },
+        {
+          "name": "Michael Elabd",
+          "url": "https://x.com/michaelelabd",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/michaelelabd.jpg"
+        },
+        {
+          "name": "Arjun Karanam",
+          "url": "https://x.com/QuantumArjun",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/QuantumArjun.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Watney Robotics",
@@ -458,7 +854,27 @@
       "homepageEvidence": "https://watney.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/watneyrobotics.com.png",
+      "founders": [
+        {
+          "name": "Sean Cheong",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-seancheong.jpg"
+        },
+        {
+          "name": "Ryan Gannon",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-rpgannon.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "General Matter",
@@ -479,7 +895,27 @@
       "homepageEvidence": "https://www.generalmatter.com/",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/generalmatter.com.png",
+      "founders": [
+        {
+          "name": "Scott Nolan",
+          "url": "https://x.com/ScottNolan",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-scott-nolan.jpg"
+        },
+        {
+          "name": "Lee Robinson",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-lee-robinson.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Infisical",
@@ -500,7 +936,32 @@
       "homepageEvidence": "https://infisical.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Tools / data / infrastructure",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/infisical.com.png",
+      "founders": [
+        {
+          "name": "Vlad Matsiiako",
+          "url": "https://x.com/matsiiako",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-vmatsiiako.jpg"
+        },
+        {
+          "name": "Maidul Islam",
+          "url": "https://x.com/maidulll",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-maidul98.jpg"
+        },
+        {
+          "name": "Tony Dang",
+          "url": "https://x.com/dangtony98",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-tony-dang.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Long Lake",
@@ -521,7 +982,32 @@
       "homepageEvidence": "https://llmh.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/llmh.com.png",
+      "founders": [
+        {
+          "name": "Alexander Taubman",
+          "url": "https://x.com/alextaubman",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-alexander-taubman.jpg"
+        },
+        {
+          "name": "Rasmus Wissmann",
+          "url": "https://x.com/rasmuswissmann",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-rasmuswissmann.jpg"
+        },
+        {
+          "name": "Varun Shenoy",
+          "url": "https://x.com/varunshenoy_",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/varunshenoy_.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Luzern Risk",
@@ -542,7 +1028,37 @@
       "homepageEvidence": "https://www.luzernrisk.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/luzernrisk.com.png",
+      "founders": [
+        {
+          "name": "Gabriel Weiss",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-gabrielweiss1.jpg"
+        },
+        {
+          "name": "Jonathan York",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-jonathan-york.jpg"
+        },
+        {
+          "name": "Rachel Jenkins",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-rachel-jenkins.jpg"
+        },
+        {
+          "name": "Sam Espinosa",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-samespinosa.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Mithril",
@@ -563,7 +1079,22 @@
       "homepageEvidence": "https://mithril.ai",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/mlfoundry.com.png",
+      "founders": [
+        {
+          "name": "Jared Quincy Davis",
+          "url": "https://x.com/jaredq_",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-jared-quincy-davis-colour.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Revel",
@@ -584,7 +1115,22 @@
       "homepageEvidence": "https://revel.io/",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/revel.io.png",
+      "founders": [
+        {
+          "name": "Scott Morton",
+          "url": "https://x.com/scottgmorton",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/scottgmorton.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Specter",
@@ -605,7 +1151,22 @@
       "homepageEvidence": "https://specter.co/",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/specter.co.png",
+      "founders": [
+        {
+          "name": "Xerxes Libsch",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-xerxes-libsch.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Turbopuffer",
@@ -626,7 +1187,27 @@
       "homepageEvidence": "https://turbopuffer.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Tools / data / infrastructure",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/turbopuffer.com.png",
+      "founders": [
+        {
+          "name": "Simon Eskildsen",
+          "url": "https://x.com/Sirupsen",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/Sirupsen.jpg"
+        },
+        {
+          "name": "Justine Li",
+          "url": "https://x.com/pushrax",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-justine-li.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Aaru",
@@ -647,7 +1228,32 @@
       "homepageEvidence": "https://aaru.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/aaru.com.png",
+      "founders": [
+        {
+          "name": "Cameron Fink",
+          "url": "https://x.com/seekingtau",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/seekingtau.jpg"
+        },
+        {
+          "name": "Ned Koh",
+          "url": "https://x.com/virtualned",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-nedkoh.jpg"
+        },
+        {
+          "name": "John Kessler",
+          "url": "https://x.com/john_k",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-johncolekessler.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Beacon Software",
@@ -668,7 +1274,27 @@
       "homepageEvidence": "https://www.beaconsoftware.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/beaconsoftware.com.png",
+      "founders": [
+        {
+          "name": "Nilam Ganenthiran",
+          "url": "https://x.com/nilamg",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-nilamganenthiran.jpg"
+        },
+        {
+          "name": "Divyahans Gupta",
+          "url": "https://x.com/divyahansg",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-divyahansg.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Fab2",
@@ -689,7 +1315,27 @@
       "homepageEvidence": "https://fab2.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/fab2.com.png",
+      "founders": [
+        {
+          "name": "Sam Zeloof",
+          "url": "https://x.com/szeloof",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/szeloof.jpg"
+        },
+        {
+          "name": "Jim Keller",
+          "url": "https://x.com/jimkxa",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-jim-keller.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "fal",
@@ -710,7 +1356,27 @@
       "homepageEvidence": "https://fal.ai",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/fal.ai.png",
+      "founders": [
+        {
+          "name": "Burkay Gur",
+          "url": "https://x.com/burkaygur",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/burkaygur.jpg"
+        },
+        {
+          "name": "Gorkem Yurtseven",
+          "url": "https://x.com/gorkem",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/gorkem.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Listen Labs",
@@ -731,7 +1397,27 @@
       "homepageEvidence": "https://listenlabs.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Agent products / models",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/listenlabs.com.png",
+      "founders": [
+        {
+          "name": "Alfred Wahlforss",
+          "url": "https://x.com/itsalfredw",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-wahlforss.jpg"
+        },
+        {
+          "name": "Florian Juengermann",
+          "url": "https://x.com/florian_jue",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-juengermann.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Medra",
@@ -752,7 +1438,22 @@
       "homepageEvidence": "https://www.medra.ai",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "$52M",
+        "kind": "Series A · Dec 2025",
+        "date": "2025-12-11",
+        "url": "https://www.medra.ai/series-a"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/medra.ai.png",
+      "founders": [
+        {
+          "name": "Michelle Lee",
+          "url": "https://x.com/michellearning",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-amichlee.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Pallet",
@@ -773,7 +1474,27 @@
       "homepageEvidence": "https://www.pallet.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Agent products / models",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/pallet.com.png",
+      "founders": [
+        {
+          "name": "Sushanth Raman",
+          "url": "https://x.com/SushanthRaman",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/SushanthRaman.jpg"
+        },
+        {
+          "name": "Andrew Spencer",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-andrewjspencer.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Periodic Labs",
@@ -794,7 +1515,27 @@
       "homepageEvidence": "https://periodic.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Agent products / models",
-      "previousImprovement": "Research direction"
+      "previousImprovement": "Research direction",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/periodic.com.png",
+      "founders": [
+        {
+          "name": "Liam Fedus",
+          "url": "https://x.com/LiamFedus",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/LiamFedus.jpg"
+        },
+        {
+          "name": "Ekin Dogus Cubuk",
+          "url": "https://x.com/ekindogus",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/ekindogus.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "SF Compute",
@@ -815,7 +1556,42 @@
       "homepageEvidence": "https://sfcompute.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/sfcompute.com.png",
+      "founders": [
+        {
+          "name": "Evan Conrad",
+          "url": "https://x.com/evanjconrad",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-evan-conrad.jpg"
+        },
+        {
+          "name": "Eric Park",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-eric-park.jpg"
+        },
+        {
+          "name": "Ethan Anderson",
+          "url": "https://x.com/Ethan_is_online",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-ethan-anderson-yc.jpg"
+        },
+        {
+          "name": "Eric Menees",
+          "url": "https://x.com/EricMenees",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/EricMenees.jpg"
+        },
+        {
+          "name": "Alex Gajewski",
+          "url": "https://x.com/apagajewski",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/apagajewski.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Simile",
@@ -836,7 +1612,37 @@
       "homepageEvidence": "https://simile.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": ">$200M",
+        "kind": "Series B · Aug 2026",
+        "date": "2026-08",
+        "url": "https://www.simile.com/blog/series-b?source=homepage"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/simile.com.png",
+      "founders": [
+        {
+          "name": "Joon Sung Park",
+          "url": "https://x.com/joon_s_pk",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/joon_s_pk.jpg"
+        },
+        {
+          "name": "Michael Bernstein",
+          "url": "https://x.com/msbernst",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-michael-bernstein.jpg"
+        },
+        {
+          "name": "Percy Liang",
+          "url": "https://x.com/percyliang",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/percyliang.jpg"
+        },
+        {
+          "name": "Lainie Yallen",
+          "url": "https://x.com/ElainaYallen",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/ElainaYallen.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Twenty",
@@ -857,7 +1663,37 @@
       "homepageEvidence": "https://twenty.io",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/twenty.io.png",
+      "founders": [
+        {
+          "name": "Joe Lin",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-joseph-lin-01.jpg"
+        },
+        {
+          "name": "Leo Olson",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-leo-olson.jpg"
+        },
+        {
+          "name": "Skyler Onken",
+          "url": "https://x.com/skyleronken",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-skyler-onken.jpg"
+        },
+        {
+          "name": "Pete Sorrentino",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-pete-sorrentino.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "XDOF",
@@ -878,7 +1714,32 @@
       "homepageEvidence": "https://xdof.ai",
       "reviewed": "2026-09-16",
       "previousAgent": "Tools / data / infrastructure",
-      "previousImprovement": "Enabling tools / data"
+      "previousImprovement": "Enabling tools / data",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/xdof.ai.png",
+      "founders": [
+        {
+          "name": "Philipp Wu",
+          "url": "https://x.com/philippswu",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/philippswu.jpg"
+        },
+        {
+          "name": "Yide (Fred) Shentu",
+          "url": "https://x.com/YideShentu",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/fredshentu.jpg"
+        },
+        {
+          "name": "Nemo Jin",
+          "url": "https://x.com/itsnemojin",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/itsnemojin.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Amca",
@@ -899,7 +1760,27 @@
       "homepageEvidence": "https://www.amca.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/amca.com.png",
+      "founders": [
+        {
+          "name": "Jai Malik",
+          "url": "https://x.com/jaimalik",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-jai-malik.jpg"
+        },
+        {
+          "name": "Eli Giovanetti",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-eli-giovanetti.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Antares Nuclear",
@@ -920,7 +1801,27 @@
       "homepageEvidence": "https://antaresindustries.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/antaresindustries.com.png",
+      "founders": [
+        {
+          "name": "Jordan Bramble",
+          "url": "https://x.com/jordanbramble",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/jordanbramble.jpg"
+        },
+        {
+          "name": "Julia DeWahl",
+          "url": "https://x.com/juliadewahl",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/juliadewahl.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Aven",
@@ -941,7 +1842,42 @@
       "homepageEvidence": "https://www.aven.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/aven.com.png",
+      "founders": [
+        {
+          "name": "Sadi Khan",
+          "url": "https://x.com/SadiSKhan",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-sadi-khan-0368854-colour.jpg"
+        },
+        {
+          "name": "Murtada Shah",
+          "url": "https://x.com/murtada",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-murtada.jpg"
+        },
+        {
+          "name": "Collin Wikman",
+          "url": "https://x.com/collinwikman",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-collin-wikman.jpg"
+        },
+        {
+          "name": "Almaz Nanjappa",
+          "url": "https://x.com/AlmazNanjappa",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-almaz-nanjappa.jpg"
+        },
+        {
+          "name": "Jeremy Solomon",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-jeremy-solomon.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Bitwise",
@@ -962,7 +1898,27 @@
       "homepageEvidence": "https://bitwiseinvestments.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/bitwiseinvestments.com.png",
+      "founders": [
+        {
+          "name": "Hunter Horsley",
+          "url": "https://x.com/HHorsley",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-hunter-horsley-11512721-colour.jpg"
+        },
+        {
+          "name": "Hong Kim",
+          "url": "https://x.com/hongkim__",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-hongkimm.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Boom Supersonic",
@@ -983,7 +1939,32 @@
       "homepageEvidence": "https://boomsupersonic.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/boomsupersonic.com.png",
+      "founders": [
+        {
+          "name": "Blake Scholl",
+          "url": "https://x.com/bscholl",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-blakescholl.jpg"
+        },
+        {
+          "name": "Joshua Krall",
+          "url": "https://x.com/jkrall",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-joshua-krall.jpg"
+        },
+        {
+          "name": "Joe Wilding",
+          "url": "https://x.com/joe_wilding",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-joe-wilding.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Brain Co.",
@@ -1004,7 +1985,37 @@
       "homepageEvidence": "https://brain.co",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/brain.co.png",
+      "founders": [
+        {
+          "name": "Dan Ashton",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-dan-ashton.jpg"
+        },
+        {
+          "name": "Eric Wu",
+          "url": "https://x.com/ericwu01",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-ericwu01.jpg"
+        },
+        {
+          "name": "Elad Gil",
+          "url": "https://x.com/eladgil",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/eladgil.jpg"
+        },
+        {
+          "name": "Jared Kushner",
+          "url": "https://x.com/jaredkushner",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/wiki-jared-kushner.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Braintrust",
@@ -1025,7 +2036,22 @@
       "homepageEvidence": "https://www.braintrust.dev",
       "reviewed": "2026-09-16",
       "previousAgent": "Tools / data / infrastructure",
-      "previousImprovement": "Enabling tools / data"
+      "previousImprovement": "Enabling tools / data",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/braintrust.dev.png",
+      "founders": [
+        {
+          "name": "Ankur Goyal",
+          "url": "https://x.com/ankrgyl",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/ankrgyl.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Castelion",
@@ -1046,7 +2072,32 @@
       "homepageEvidence": "https://www.castelion.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/castelion.com.png",
+      "founders": [
+        {
+          "name": "Bryon Hargis",
+          "url": "https://x.com/hargsb",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-hargsb-colour.jpg"
+        },
+        {
+          "name": "Sean Pitt",
+          "url": "https://x.com/sean_pitt_",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-sean-pitt-036935a9.jpg"
+        },
+        {
+          "name": "Andrew Kreitz",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-andrewkreitz.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Enter",
@@ -1067,7 +2118,32 @@
       "homepageEvidence": "https://www.getenter.ai",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/getenter.ai.png",
+      "founders": [
+        {
+          "name": "Mateus Costa-Ribeiro",
+          "url": "https://x.com/mateus_cr123",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-mateus-costa-ribeiro-456475195.jpg"
+        },
+        {
+          "name": "Henrique Vaz",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-henrique-vaz.jpg"
+        },
+        {
+          "name": "Mike Mac-Vicar",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-mmacvicar.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Exa",
@@ -1088,7 +2164,27 @@
       "homepageEvidence": "https://exa.ai",
       "reviewed": "2026-09-16",
       "previousAgent": "Tools / data / infrastructure",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/exa.ai.png",
+      "founders": [
+        {
+          "name": "Will Bryk",
+          "url": "https://x.com/WilliamBryk",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/WilliamBryk.jpg"
+        },
+        {
+          "name": "Jeff Wang",
+          "url": "https://x.com/jeffzwang",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/jeffzwang.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Factory",
@@ -1109,7 +2205,27 @@
       "homepageEvidence": "https://factory.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Agent products / models",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": ">$400M",
+        "kind": "Total · Sep 2026",
+        "date": "2026-09-15",
+        "url": "https://factory.com/news/5-billion-valuation"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/factory.com.png",
+      "founders": [
+        {
+          "name": "Matan Grinberg",
+          "url": "https://x.com/matanSF",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-matan-grinberg.jpg"
+        },
+        {
+          "name": "Eno Reyes",
+          "url": "https://x.com/EnoReyes",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-enoreyes.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Fractile",
@@ -1130,7 +2246,22 @@
       "homepageEvidence": "https://www.fractile.ai",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/fractile.ai.png",
+      "founders": [
+        {
+          "name": "Walter Goodwin",
+          "url": "https://x.com/goodwin_ml",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-walter-goodwin.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Higgsfield",
@@ -1151,7 +2282,32 @@
       "homepageEvidence": "https://higgsfield.ai",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/higgsfield.ai.png",
+      "founders": [
+        {
+          "name": "Alex Mashrabov",
+          "url": "https://x.com/alexmashrabov",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-amashrabov.jpg"
+        },
+        {
+          "name": "Yerzat Dulat",
+          "url": "https://x.com/codentropy",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-yerzat-dulat.jpg"
+        },
+        {
+          "name": "Mahi De Silva",
+          "url": "https://x.com/Mahi",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/Mahi.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Modal",
@@ -1172,7 +2328,27 @@
       "homepageEvidence": "https://modal.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Tools / data / infrastructure",
-      "previousImprovement": "Enabling tools / data"
+      "previousImprovement": "Enabling tools / data",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/modal.com.png",
+      "founders": [
+        {
+          "name": "Erik Bernhardsson",
+          "url": "https://x.com/bernhardsson",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/bernhardsson.jpg"
+        },
+        {
+          "name": "Akshat Bubna",
+          "url": "https://x.com/akshat_b",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-akshat-bubna.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Neros",
@@ -1193,7 +2369,27 @@
       "homepageEvidence": "https://www.neros.tech",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/neros.tech.png",
+      "founders": [
+        {
+          "name": "Soren Monroe-Anderson",
+          "url": "https://x.com/soren_ma",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/soren_ma.jpg"
+        },
+        {
+          "name": "Olaf Hichwa",
+          "url": "https://x.com/OHichwa",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/hichwa-yt-relentless.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Nominal",
@@ -1214,7 +2410,32 @@
       "homepageEvidence": "https://nominal.io",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/nominal.io.png",
+      "founders": [
+        {
+          "name": "Cameron McCord",
+          "url": "https://x.com/CameronLMcCord",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/CameronLMcCord.jpg"
+        },
+        {
+          "name": "Bryce Strauss",
+          "url": "https://x.com/brycestrauss",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/brycestrauss.jpg"
+        },
+        {
+          "name": "Jason Hoch",
+          "url": "https://x.com/jrshoch",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/jrshoch.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "OLIX",
@@ -1235,7 +2456,22 @@
       "homepageEvidence": "https://olix.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/olix.com.png",
+      "founders": [
+        {
+          "name": "James Dacombe",
+          "url": "https://x.com/jamesdacombe",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-jamesdacombe.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "OpenEvidence",
@@ -1256,7 +2492,27 @@
       "homepageEvidence": "https://www.openevidence.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/openevidence.com.png",
+      "founders": [
+        {
+          "name": "Daniel Nadler",
+          "url": "https://x.com/DanielNadler",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-daniel-nadler-colour.jpg"
+        },
+        {
+          "name": "Zachary Ziegler",
+          "url": "https://x.com/zackmziegler",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/zackmziegler.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Physical Intelligence",
@@ -1277,7 +2533,52 @@
       "homepageEvidence": "https://www.physicalintelligence.company/",
       "reviewed": "2026-09-16",
       "previousAgent": "Agent products / models",
-      "previousImprovement": "Explicit learning / adaptation"
+      "previousImprovement": "Explicit learning / adaptation",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/physicalintelligence.company.png",
+      "founders": [
+        {
+          "name": "Karol Hausman",
+          "url": "https://x.com/hausman_k",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/hausman_k.jpg"
+        },
+        {
+          "name": "Sergey Levine",
+          "url": "https://x.com/svlevine",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/svlevine.jpg"
+        },
+        {
+          "name": "Chelsea Finn",
+          "url": "https://x.com/chelseabfinn",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/chelseabfinn.jpg"
+        },
+        {
+          "name": "Adnan Esmail",
+          "url": "https://x.com/adnan_esm",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/adnan_esm.jpg"
+        },
+        {
+          "name": "Brian Ichter",
+          "url": "https://x.com/brian_ichter",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/brian_ichter.jpg"
+        },
+        {
+          "name": "Quan Vuong",
+          "url": "https://x.com/QuanVng",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-quan-vuong.jpg"
+        },
+        {
+          "name": "Lachy Groom",
+          "url": "https://x.com/lachygroom",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/lachygroom.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Rogo",
@@ -1298,7 +2599,32 @@
       "homepageEvidence": "https://rogo.ai",
       "reviewed": "2026-09-16",
       "previousAgent": "Agent products / models",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/rogo.ai.png",
+      "founders": [
+        {
+          "name": "Gabriel Stengel",
+          "url": "https://x.com/GabeStengel",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-gabestengel.jpg"
+        },
+        {
+          "name": "John Willett",
+          "url": "https://x.com/johnwillettrogo",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/johnwillettrogo.jpg"
+        },
+        {
+          "name": "Tumas Rackaitis",
+          "url": "https://x.com/TumasRackaitis",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-tumas-r-918bb6125.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Rox",
@@ -1319,7 +2645,42 @@
       "homepageEvidence": "https://www.rox.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Agent products / models",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/rox.com.png",
+      "founders": [
+        {
+          "name": "Ishan Mukherjee",
+          "url": "https://x.com/ishanmkh",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/ishanmkh.jpg"
+        },
+        {
+          "name": "Shriram Sridharan",
+          "url": "https://x.com/shriram_s",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-shriram-sridharan.jpg"
+        },
+        {
+          "name": "Diogo Ribeiro",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-diogomiguelribeiro.jpg"
+        },
+        {
+          "name": "Christopher Ré",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-christopher-re.jpg"
+        },
+        {
+          "name": "Avanika Narayan",
+          "url": "https://x.com/Avanika15",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/Avanika15.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Serval",
@@ -1340,7 +2701,27 @@
       "homepageEvidence": "https://www.serval.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Agent products / models",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "$127M",
+        "kind": "Total · Dec 2025",
+        "date": "2025-12",
+        "url": "https://www.serval.com/serval-news/serval%E2%80%99s-next-chapter-raising-75m-to-build-the-new-era-of-enterprise-automation-and-service-management"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/serval.com.png",
+      "founders": [
+        {
+          "name": "Jake Stauch",
+          "url": "https://x.com/jakeserval",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/jakeserval.jpg"
+        },
+        {
+          "name": "Alex McLeod",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-alexmcleodio.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Socket",
@@ -1361,7 +2742,22 @@
       "homepageEvidence": "https://socket.dev",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/socket.dev.png",
+      "founders": [
+        {
+          "name": "Feross Aboukhadijeh",
+          "url": "https://x.com/feross",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/feross.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "State Affairs",
@@ -1382,7 +2778,27 @@
       "homepageEvidence": "https://stateaffairs.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/stateaffairs.com.png",
+      "founders": [
+        {
+          "name": "Evan Burns",
+          "url": "https://x.com/evanburns",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-evan-burns-8a49549.jpg"
+        },
+        {
+          "name": "Jamie Roberts Seltzer",
+          "url": "https://x.com/JamieLightShed",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/mls-jamie-roberts-seltzer.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Valar Atomics",
@@ -1403,7 +2819,22 @@
       "homepageEvidence": "https://www.valaratomics.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/valaratomics.com.png",
+      "founders": [
+        {
+          "name": "Isaiah Taylor",
+          "url": "https://x.com/isaiah_p_taylor",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/isaiah_p_taylor.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Vapi",
@@ -1424,7 +2855,27 @@
       "homepageEvidence": "https://vapi.ai",
       "reviewed": "2026-09-16",
       "previousAgent": "Tools / data / infrastructure",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/vapi.ai.png",
+      "founders": [
+        {
+          "name": "Jordan Dearsley",
+          "url": "https://x.com/jordan_dearsley",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/jordan_dearsley.jpg"
+        },
+        {
+          "name": "Nikhil Gupta",
+          "url": "https://x.com/nikhilro_",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-nikhilro.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Verse Medical",
@@ -1445,7 +2896,22 @@
       "homepageEvidence": "https://versemedical.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/versemedical.com.png",
+      "founders": [
+        {
+          "name": "Dhaivat Pandya",
+          "url": "https://x.com/dhaivatsays",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-dhaivat-pandya.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "WorkOS",
@@ -1466,7 +2932,22 @@
       "homepageEvidence": "https://workos.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/workos.com.png",
+      "founders": [
+        {
+          "name": "Michael Grinich",
+          "url": "https://x.com/grinich",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/grinich.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "XBOW",
@@ -1487,7 +2968,22 @@
       "homepageEvidence": "https://xbow.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Agent products / models",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/xbow.com.png",
+      "founders": [
+        {
+          "name": "Oege de Moor",
+          "url": "https://x.com/oegerikus",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-oegedemoor.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Arcana",
@@ -1508,7 +3004,27 @@
       "homepageEvidence": "https://www.arcana.io",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "≤$150M",
+        "kind": "Band when picked",
+        "date": "2026-09",
+        "url": "https://breakoutlist.com/#u"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/arcana.io.png",
+      "founders": [
+        {
+          "name": "Richard Falk-Wallace",
+          "url": "https://x.com/richfalkwallace",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/richfalkwallace.jpg"
+        },
+        {
+          "name": "Siva Sooriyan",
+          "url": "https://x.com/sivavisakan",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-sivavisakan.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Base",
@@ -1529,7 +3045,27 @@
       "homepageEvidence": "https://www.basepowercompany.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/basepowercompany.com.png",
+      "founders": [
+        {
+          "name": "Zach Dell",
+          "url": "https://x.com/ZachBDell",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/ZachBDell.jpg"
+        },
+        {
+          "name": "Justin Lopas",
+          "url": "https://x.com/JLopas",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/JLopas.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Baseten",
@@ -1550,7 +3086,37 @@
       "homepageEvidence": "https://www.baseten.co",
       "reviewed": "2026-09-16",
       "previousAgent": "Tools / data / infrastructure",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/baseten.co.png",
+      "founders": [
+        {
+          "name": "Tuhin Srivastava",
+          "url": "https://x.com/tuhinone",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/tuhinone.jpg"
+        },
+        {
+          "name": "Amir Haghighat",
+          "url": "https://x.com/amiruci",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/amiruci.jpg"
+        },
+        {
+          "name": "Philip Howes",
+          "url": "https://x.com/saltyph",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-philhowes-colour.jpg"
+        },
+        {
+          "name": "Pankaj Gupta",
+          "url": "https://x.com/defpan",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/defpan.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Cambridge Aerospace",
@@ -1571,7 +3137,32 @@
       "homepageEvidence": "https://cambridgeaerospace.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/cambridgeaerospace.com.png",
+      "founders": [
+        {
+          "name": "Steven Barrett",
+          "url": "https://x.com/StevenRHBarrett",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/StevenRHBarrett.jpg"
+        },
+        {
+          "name": "Chris Sylvan",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/tectonic-chris-sylvan.jpg"
+        },
+        {
+          "name": "Junaid Hussain",
+          "url": "https://x.com/DerJunaid",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-jhussain1.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Cognition",
@@ -1592,7 +3183,32 @@
       "homepageEvidence": "https://cognition.ai",
       "reviewed": "2026-09-16",
       "previousAgent": "Agent products / models",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": ">$2B",
+        "kind": "Series E · Sep 2026",
+        "date": "2026-09-08",
+        "url": "https://cognition.com/blog/series-e"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/cognition.ai.png",
+      "founders": [
+        {
+          "name": "Scott Wu",
+          "url": "https://x.com/ScottWu46",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/ScottWu46.jpg"
+        },
+        {
+          "name": "Steven Hao",
+          "url": "https://x.com/stevenkplus1",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/stevenkplus1.jpg"
+        },
+        {
+          "name": "Walden Yan",
+          "url": "https://x.com/walden_yan",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/walden_yan.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "ElevenLabs",
@@ -1613,7 +3229,27 @@
       "homepageEvidence": "https://elevenlabs.io",
       "reviewed": "2026-09-16",
       "previousAgent": "Agent products / models",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/elevenlabs.io.png",
+      "founders": [
+        {
+          "name": "Mati Staniszewski",
+          "url": "https://x.com/mati",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/mati-colour.jpg"
+        },
+        {
+          "name": "Piotr Dabkowski",
+          "url": "https://x.com/dabkowski_piotr",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/dabkowski_piotr-colour.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Etched",
@@ -1634,7 +3270,32 @@
       "homepageEvidence": "https://www.etched.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/etched.com.png",
+      "founders": [
+        {
+          "name": "Gavin Uberti",
+          "url": "https://x.com/UbertiGavin",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/UbertiGavin.jpg"
+        },
+        {
+          "name": "Robert Wachen",
+          "url": "https://x.com/robertwachen",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/robertwachen.jpg"
+        },
+        {
+          "name": "Chris Zhu",
+          "url": "https://x.com/czhu1729",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/czhu1729.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Fireworks AI",
@@ -1655,7 +3316,47 @@
       "homepageEvidence": "https://fireworks.ai",
       "reviewed": "2026-09-16",
       "previousAgent": "Tools / data / infrastructure",
-      "previousImprovement": "Enabling tools / data"
+      "previousImprovement": "Enabling tools / data",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/fireworks.ai.png",
+      "founders": [
+        {
+          "name": "Lin Qiao",
+          "url": "https://x.com/lqiao",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/lqiao.jpg"
+        },
+        {
+          "name": "Dmytro Dzhulgakov",
+          "url": "https://x.com/dzhulgakov",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/dzhulgakov.jpg"
+        },
+        {
+          "name": "Pawel Garbacki",
+          "url": "https://x.com/pawelg",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-pawel-garbacki.jpg"
+        },
+        {
+          "name": "James Reed",
+          "url": "https://x.com/jamesr66a",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-james-reed.jpg"
+        },
+        {
+          "name": "Chenyu Zhao",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-chenyu-zhao.jpg"
+        },
+        {
+          "name": "Dmytro Ivchenko",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-dmytro-ivchenko.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Fluidstack",
@@ -1676,7 +3377,37 @@
       "homepageEvidence": "https://www.fluidstack.io",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/fluidstack.io.png",
+      "founders": [
+        {
+          "name": "Gary Wu",
+          "url": "https://x.com/garywu",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-gary-wu.jpg"
+        },
+        {
+          "name": "Cesar Maklary",
+          "url": "https://x.com/CesarMaklary",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-cesar-maklary.jpg"
+        },
+        {
+          "name": "Jamie Cox",
+          "url": "https://x.com/jimcox25",
+          "photo": "https://breakoutlist.com/assets/founders/jimcox25.jpg"
+        },
+        {
+          "name": "Peter Francis",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-peter-francis.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Handshake",
@@ -1697,7 +3428,32 @@
       "homepageEvidence": "https://joinhandshake.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Tools / data / infrastructure",
-      "previousImprovement": "Enabling tools / data"
+      "previousImprovement": "Enabling tools / data",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/joinhandshake.com.png",
+      "founders": [
+        {
+          "name": "Garrett Lord",
+          "url": "https://x.com/GarrettLord",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/GarrettLord.jpg"
+        },
+        {
+          "name": "Ben Christensen",
+          "url": "https://x.com/benmchristensen",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-ben-christensen-colour.jpg"
+        },
+        {
+          "name": "Scott Ringwelski",
+          "url": "https://x.com/scottringwelski",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-scott-ringwelski-colour.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Harvey",
@@ -1718,7 +3474,27 @@
       "homepageEvidence": "https://www.harvey.ai",
       "reviewed": "2026-09-16",
       "previousAgent": "Agent products / models",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/harvey.ai.png",
+      "founders": [
+        {
+          "name": "Winston Weinberg",
+          "url": "https://x.com/winstonweinberg",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/winstonweinberg.jpg"
+        },
+        {
+          "name": "Gabriel Pereyra",
+          "url": "https://x.com/gabepereyra",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/gabepereyra.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Kalshi",
@@ -1739,7 +3515,27 @@
       "homepageEvidence": "https://kalshi.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/kalshi.com.png",
+      "founders": [
+        {
+          "name": "Tarek Mansour",
+          "url": "https://x.com/mansourtarek_",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-tarek-mansour.jpg"
+        },
+        {
+          "name": "Luana Lopes Lara",
+          "url": "https://x.com/luanalopeslara",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-luana-lopes-lara-3151068a.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Kraken",
@@ -1760,7 +3556,32 @@
       "homepageEvidence": "https://www.kraken.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/kraken.com.png",
+      "founders": [
+        {
+          "name": "Jesse Powell",
+          "url": "https://x.com/jespow",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-jessepowell.jpg"
+        },
+        {
+          "name": "Thanh Luu",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-thanh-luu.jpg"
+        },
+        {
+          "name": "Michael Gronager",
+          "url": "https://x.com/gronager",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-michael-gronager.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Lovable",
@@ -1781,7 +3602,27 @@
       "homepageEvidence": "https://lovable.dev",
       "reviewed": "2026-09-16",
       "previousAgent": "Agent products / models",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": "$400M",
+        "kind": "Series C · Aug 2026",
+        "date": "2026-08-12",
+        "url": "https://lovable.dev/blog/series-c"
+      },
+      "logo": "https://breakoutlist.com/assets/icons/lovable.dev.png",
+      "founders": [
+        {
+          "name": "Anton Osika",
+          "url": "https://x.com/antonosika",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-antonosika.jpg"
+        },
+        {
+          "name": "Fabian Hedin",
+          "url": "https://x.com/FabianHedin",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-fabian-hedin-2377b0144.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Mach Industries",
@@ -1802,7 +3643,22 @@
       "homepageEvidence": "https://machindustries.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/machindustries.com.png",
+      "founders": [
+        {
+          "name": "Ethan Thornton",
+          "url": "https://x.com/ethanrthornton",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-ethan-thornton.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Mercor",
@@ -1823,7 +3679,32 @@
       "homepageEvidence": "https://www.mercor.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Tools / data / infrastructure",
-      "previousImprovement": "Enabling tools / data"
+      "previousImprovement": "Enabling tools / data",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/mercor.com.png",
+      "founders": [
+        {
+          "name": "Brendan Foody",
+          "url": "https://x.com/BrendanFoody",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/BrendanFoody.jpg"
+        },
+        {
+          "name": "Adarsh Hiremath",
+          "url": "https://x.com/adarsh_exe",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/adarsh_exe.jpg"
+        },
+        {
+          "name": "Surya Midha",
+          "url": "https://x.com/suryamidha",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-surya-midha.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Owner",
@@ -1844,7 +3725,27 @@
       "homepageEvidence": "https://www.owner.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/owner.com.png",
+      "founders": [
+        {
+          "name": "Adam Guild",
+          "url": "https://x.com/adamguild",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-adamharrisonguild.jpg"
+        },
+        {
+          "name": "Dean Bloembergen",
+          "url": "https://x.com/deanbloembergen",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-deanbloembergen.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Radiant",
@@ -1865,7 +3766,27 @@
       "homepageEvidence": "https://www.radiantnuclear.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/radiantnuclear.com.png",
+      "founders": [
+        {
+          "name": "Doug Bernauer",
+          "url": "https://x.com/DougBernauer",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/DougBernauer.jpg"
+        },
+        {
+          "name": "Bob Urberger",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/svic-bob-urberger.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Ramp",
@@ -1886,7 +3807,32 @@
       "homepageEvidence": "https://ramp.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/ramp.com.png",
+      "founders": [
+        {
+          "name": "Eric Glyman",
+          "url": "https://x.com/eglyman",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/eglyman.jpg"
+        },
+        {
+          "name": "Karim Atiyeh",
+          "url": "https://x.com/karimatiyeh",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-karimatiyeh.jpg"
+        },
+        {
+          "name": "Gene Lee",
+          "url": "https://x.com/genejaelee",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-genejaelee.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Saronic",
@@ -1907,7 +3853,37 @@
       "homepageEvidence": "https://www.saronic.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/saronic.com.png",
+      "founders": [
+        {
+          "name": "Dino Mavrookas",
+          "url": "https://x.com/MavrookasD",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/MavrookasD.jpg"
+        },
+        {
+          "name": "Rob Lehman",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-rob-lehman.jpg"
+        },
+        {
+          "name": "Vibhav Altekar",
+          "url": "https://x.com/Vbob202",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-vibhav-altekar.jpg"
+        },
+        {
+          "name": "Doug Lambert",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-doug-lambert.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Stoke Space",
@@ -1928,7 +3904,27 @@
       "homepageEvidence": "https://www.stokespace.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/stokespace.com.png",
+      "founders": [
+        {
+          "name": "Andy Lapsa",
+          "url": "https://x.com/AndyLapsa",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/AndyLapsa.jpg"
+        },
+        {
+          "name": "Tom Feldman",
+          "url": "https://x.com/Rkt_Da",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-tom-feldman.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Verkada",
@@ -1949,7 +3945,37 @@
       "homepageEvidence": "https://www.verkada.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/verkada.com.png",
+      "founders": [
+        {
+          "name": "Filip Kaliszan",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-kaliszan.jpg"
+        },
+        {
+          "name": "James Ren",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-james-ren-2607285.jpg"
+        },
+        {
+          "name": "Benjamin Bercovitz",
+          "url": "https://x.com/bercovitz",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-benjamin-bercovitz.jpg"
+        },
+        {
+          "name": "Hans Robertson",
+          "url": null,
+          "photo": "https://breakoutlist.com/assets/founders-cropped/site-hans-robertson.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     },
     {
       "name": "Whop",
@@ -1970,7 +3996,32 @@
       "homepageEvidence": "https://whop.com",
       "reviewed": "2026-09-16",
       "previousAgent": "Not established in this screen",
-      "previousImprovement": "Not established in this screen"
+      "previousImprovement": "Not established in this screen",
+      "funding": {
+        "amount": null,
+        "kind": "Not verified",
+        "date": null,
+        "url": null
+      },
+      "logo": "https://breakoutlist.com/assets/icons/whop.com.png",
+      "founders": [
+        {
+          "name": "Steven Schwartz",
+          "url": "https://x.com/cultured",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/cultured.jpg"
+        },
+        {
+          "name": "Cameron Zoub",
+          "url": "https://x.com/czoob3",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/li-cameron-zoub-29368851.jpg"
+        },
+        {
+          "name": "Jack Sharkey",
+          "url": "https://x.com/jsharkey",
+          "photo": "https://breakoutlist.com/assets/founders-cropped/jsharkey.jpg"
+        }
+      ],
+      "profileSource": "https://breakoutlist.com/"
     }
   ]
 }
