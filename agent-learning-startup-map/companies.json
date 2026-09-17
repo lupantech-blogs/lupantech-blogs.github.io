@@ -28,7 +28,14 @@
       "improvement": 18
     },
     "learningPositiveTotal": 34,
-    "learningNotEstablishedTotal": 58
+    "learningNotEstablishedTotal": 58,
+    "funding": {
+      "reviewed": "2026-09-16",
+      "sourcedAmounts": 85,
+      "historicalBandsOnly": 7,
+      "unverified": 0,
+      "previousSourcedAmounts": 8
+    }
   },
   "companies": [
     {
@@ -55,7 +62,11 @@
         "amount": "≤$150M",
         "kind": "Band when picked",
         "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "url": "https://breakoutlist.com/#u",
+        "scope": "Historical band",
+        "evidenceType": "Breakout List selection band",
+        "reviewed": "2026-09-16",
+        "note": "No company-specific amount was located in this review. This is Breakout List’s historical selection band, not a current funding total."
       },
       "logo": "https://breakoutlist.com/assets/icons/hone.com.png",
       "founders": [
@@ -101,7 +112,11 @@
         "amount": "≤$150M",
         "kind": "Band when picked",
         "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "url": "https://breakoutlist.com/#u",
+        "scope": "Historical band",
+        "evidenceType": "Breakout List selection band",
+        "reviewed": "2026-09-16",
+        "note": "No company-specific amount was located in this review. This is Breakout List’s historical selection band, not a current funding total."
       },
       "logo": "https://breakoutlist.com/assets/icons/normal.ai.png",
       "founders": [
@@ -139,10 +154,14 @@
       "previousAgent": "Agent products / models",
       "previousImprovement": "Research direction",
       "funding": {
-        "amount": "≤$150M",
-        "kind": "Band when picked",
-        "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "amount": "$75M",
+        "scope": "Round",
+        "date": "2026-04-30",
+        "url": "https://si.inc/posts/a/",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Round · Apr 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/si.inc.png",
       "founders": [
@@ -183,7 +202,11 @@
         "amount": "≤$150M",
         "kind": "Band when picked",
         "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "url": "https://breakoutlist.com/#u",
+        "scope": "Historical band",
+        "evidenceType": "Breakout List selection band",
+        "reviewed": "2026-09-16",
+        "note": "No company-specific amount was located in this review. This is Breakout List’s historical selection band, not a current funding total."
       },
       "logo": "https://breakoutlist.com/assets/icons/tacitlabs.co.png",
       "founders": [
@@ -221,10 +244,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": "≤$150M",
-        "kind": "Band when picked",
-        "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "amount": "$52.6M",
+        "scope": "SEC offering sold",
+        "date": "2026-05-27",
+        "url": "https://www.sec.gov/Archives/edgar/data/2135715/000213571526000001/xslFormDX01/primary_doc.xml",
+        "note": "Filed securities sold: $52,564,341. This is one offering, not a lifetime total.",
+        "evidenceType": "Filing",
+        "reviewed": "2026-09-16",
+        "kind": "SEC offering sold · May 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/americanterawatt.com.png",
       "founders": [
@@ -270,7 +297,11 @@
         "amount": "≤$150M",
         "kind": "Band when picked",
         "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "url": "https://breakoutlist.com/#u",
+        "scope": "Historical band",
+        "evidenceType": "Breakout List selection band",
+        "reviewed": "2026-09-16",
+        "note": "No company-specific amount was located in this review. This is Breakout List’s historical selection band, not a current funding total."
       },
       "logo": "https://breakoutlist.com/assets/icons/condu.it.png",
       "founders": [
@@ -311,7 +342,11 @@
         "amount": "≤$150M",
         "kind": "Band when picked",
         "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "url": "https://breakoutlist.com/#u",
+        "scope": "Historical band",
+        "evidenceType": "Breakout List selection band",
+        "reviewed": "2026-09-16",
+        "note": "No company-specific amount was located in this review. This is Breakout List’s historical selection band, not a current funding total."
       },
       "logo": "https://breakoutlist.com/assets/icons/convergent.dev.svg",
       "founders": [
@@ -354,10 +389,14 @@
       "previousAgent": "Agent products / models",
       "previousImprovement": "Research direction",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$100M",
+        "scope": "Reported total",
+        "date": "2026-05",
+        "url": "https://sacra.com/c/core-automation/",
+        "note": "Confirmed primary financing as of May 2026; subsequent fundraising reports are not included.",
+        "evidenceType": "Reporting",
+        "reviewed": "2026-09-16",
+        "kind": "Reported total · May 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/coreauto.com.png",
       "founders": [
@@ -398,7 +437,10 @@
         "amount": "$98M",
         "kind": "Total · Jun 2026",
         "date": "2026-06-23",
-        "url": "https://engram.com/blog/introducing-engram"
+        "url": "https://engram.com/blog/introducing-engram",
+        "scope": "Total",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16"
       },
       "logo": "https://breakoutlist.com/assets/icons/engram.com.png",
       "founders": [
@@ -441,10 +483,14 @@
       "previousAgent": "Agent products / models",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$350M",
+        "scope": "Reported total",
+        "date": "2026-08-26",
+        "url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation/",
+        "note": "",
+        "evidenceType": "Reporting",
+        "reviewed": "2026-09-16",
+        "kind": "Reported total · Aug 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/instinct.com.png",
       "founders": [
@@ -477,10 +523,14 @@
       "previousAgent": "Tools / data / infrastructure",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": "≤$150M",
-        "kind": "Band when picked",
-        "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "amount": "$26M",
+        "scope": "Seed",
+        "date": "2026-08-25",
+        "url": "https://siliconangle.com/2026/08/25/agentic-web-search-infrastructure-startup-keenable-raises-26m/",
+        "note": "",
+        "evidenceType": "Reporting",
+        "reviewed": "2026-09-16",
+        "kind": "Seed · Aug 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/keenable.ai.png",
       "founders": [
@@ -521,7 +571,11 @@
         "amount": "≤$150M",
         "kind": "Band when picked",
         "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "url": "https://breakoutlist.com/#u",
+        "scope": "Historical band",
+        "evidenceType": "Breakout List selection band",
+        "reviewed": "2026-09-16",
+        "note": "No company-specific amount was located in this review. This is Breakout List’s historical selection band, not a current funding total."
       },
       "logo": "https://breakoutlist.com/assets/icons/lumaril.com.png",
       "founders": [
@@ -559,10 +613,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": "≤$150M",
-        "kind": "Band when picked",
-        "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "amount": "$23M",
+        "scope": "Series A",
+        "date": "2026-06-11",
+        "url": "https://www.globenewswire.com/news-release/2026/06/11/3310316/0/en/Neion-Bio-Raises-Oversubscribed-23-Million-Series-A-to-Advance-Biologics-Manufacturing-Platform-and-Expand-Pipeline.html",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series A · Jun 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/neion.bio.png",
       "founders": [
@@ -600,10 +658,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": "≤$150M",
-        "kind": "Band when picked",
-        "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "amount": "≈$13M",
+        "scope": "Reported total",
+        "date": "2026-07-29",
+        "url": "https://siliconangle.com/2026/07/29/pangram-labs-raises-9m-launch-accurate-ai-detection-text-images/",
+        "note": "Source describes total funding as almost $13M after a $9M round.",
+        "evidenceType": "Reporting",
+        "reviewed": "2026-09-16",
+        "kind": "Reported total · Jul 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/pangram.com.png",
       "founders": [
@@ -641,10 +703,14 @@
       "previousAgent": "Agent products / models",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": "≤$150M",
-        "kind": "Band when picked",
-        "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "amount": "$18M",
+        "scope": "Company-reported backing",
+        "date": null,
+        "url": "https://www.linkedin.com/company/quadrillion-labs",
+        "note": "Company profile states $18M in backing; announcement date and round breakdown are not given.",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Company-reported backing"
       },
       "logo": "https://breakoutlist.com/assets/icons/quadrillion.ai.png",
       "founders": [
@@ -677,10 +743,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": "≤$150M",
-        "kind": "Band when picked",
-        "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "amount": "$7M",
+        "scope": "Reported round",
+        "date": "2024-05-14",
+        "url": "https://www.coincarp.com/fundraising/rexyz-undisclosed/",
+        "note": "Follow-on financing; excludes reinsurance deposits, assets and token market value.",
+        "evidenceType": "Reporting",
+        "reviewed": "2026-09-16",
+        "kind": "Reported round · May 2024"
       },
       "logo": "https://breakoutlist.com/assets/icons/re.xyz.png",
       "founders": [
@@ -731,7 +801,10 @@
         "amount": "$335M",
         "kind": "Total reported",
         "date": "2026-09-16",
-        "url": "https://www.ricursive.com/"
+        "url": "https://www.ricursive.com/",
+        "scope": "Total reported",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16"
       },
       "logo": "https://breakoutlist.com/assets/icons/ricursive.com.ri.png",
       "founders": [
@@ -769,10 +842,14 @@
       "previousAgent": "Tools / data / infrastructure",
       "previousImprovement": "Enabling tools / data",
       "funding": {
-        "amount": "≤$150M",
-        "kind": "Band when picked",
-        "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "amount": "$80M",
+        "scope": "Total",
+        "date": "2026-06-24",
+        "url": "https://www.sailresearch.com/blog/sail-raises-80m",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Total · Jun 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/sailresearch.com.png",
       "founders": [
@@ -810,10 +887,14 @@
       "previousAgent": "Tools / data / infrastructure",
       "previousImprovement": "Explicit learning / adaptation",
       "funding": {
-        "amount": "≤$150M",
-        "kind": "Band when picked",
-        "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "amount": "$40M",
+        "scope": "Reported Series A",
+        "date": "2026-08-17",
+        "url": "https://www.gaebler.com/VC-Funding-4ECB0195-09BC-4EB0-AEC8-5D8FBAABEA98-Trajectory-08-17-2026",
+        "note": "",
+        "evidenceType": "Reporting",
+        "reviewed": "2026-09-16",
+        "kind": "Reported Series A · Aug 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/trajectory.ai.png",
       "founders": [
@@ -856,10 +937,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": "≤$150M",
-        "kind": "Band when picked",
-        "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "amount": "$21M",
+        "scope": "Seed",
+        "date": null,
+        "url": "https://wellfound.com/company/watney-robotics",
+        "note": "Company profile states $21M seed funding; announcement date is not given.",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Seed"
       },
       "logo": "https://breakoutlist.com/assets/icons/watneyrobotics.com.png",
       "founders": [
@@ -897,10 +982,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$50M",
+        "scope": "Reported round",
+        "date": "2025-04-14",
+        "url": "https://www.bloomberg.com/news/articles/2025-04-14/peter-thiel-joins-board-of-enriched-uranium-startup-general-matter",
+        "note": "Excludes government contracts and export-financing commitments.",
+        "evidenceType": "Reporting",
+        "reviewed": "2026-09-16",
+        "kind": "Reported round · Apr 2025"
       },
       "logo": "https://breakoutlist.com/assets/icons/generalmatter.com.png",
       "founders": [
@@ -938,10 +1027,14 @@
       "previousAgent": "Tools / data / infrastructure",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": "≤$150M",
-        "kind": "Band when picked",
-        "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "amount": "$16M",
+        "scope": "Series A",
+        "date": "2025-06-06",
+        "url": "https://www.prnewswire.com/news-releases/infisical-secures-16m-series-a-to-redefine-enterprise-secrets-identity-and-access-management-302475063.html",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series A · Jun 2025"
       },
       "logo": "https://breakoutlist.com/assets/icons/infisical.com.png",
       "founders": [
@@ -984,10 +1077,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": ">$600M",
+        "scope": "Reported total",
+        "date": "2025-01",
+        "url": "https://research.contrary.com/report/the-vertical-ai-playbook",
+        "note": "Historical holding-company financing, including capital for acquisitions; not directly comparable to software operating-company rounds.",
+        "evidenceType": "Reporting",
+        "reviewed": "2026-09-16",
+        "kind": "Reported total · Jan 2025"
       },
       "logo": "https://breakoutlist.com/assets/icons/llmh.com.png",
       "founders": [
@@ -1030,10 +1127,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": "≤$150M",
-        "kind": "Band when picked",
-        "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "amount": "$12M",
+        "scope": "Series A",
+        "date": "2025-05-05",
+        "url": "https://www.luzernrisk.com/blog-posts/xn-captive-rebrands-as-luzern-risk-with-us-12m-funding",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series A · May 2025"
       },
       "logo": "https://breakoutlist.com/assets/icons/luzernrisk.com.png",
       "founders": [
@@ -1081,10 +1182,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": "≤$150M",
-        "kind": "Band when picked",
-        "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "amount": "$80M",
+        "scope": "Seed + Series A",
+        "date": "2024-03-21",
+        "url": "https://mithril.ai/blog/introducing-foundry",
+        "note": "Announced under its former name, Foundry.",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Seed + Series A · Mar 2024"
       },
       "logo": "https://breakoutlist.com/assets/icons/mlfoundry.com.png",
       "founders": [
@@ -1117,10 +1222,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$150M",
+        "scope": "Series B",
+        "date": "2026-02-26",
+        "url": "https://www.revel.io/newsroom/accelerating-revel",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series B · Feb 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/revel.io.png",
       "founders": [
@@ -1156,7 +1265,11 @@
         "amount": "≤$150M",
         "kind": "Band when picked",
         "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "url": "https://breakoutlist.com/#u",
+        "scope": "Historical band",
+        "evidenceType": "Breakout List selection band",
+        "reviewed": "2026-09-16",
+        "note": "No company-specific amount was located in this review. This is Breakout List’s historical selection band, not a current funding total."
       },
       "logo": "https://breakoutlist.com/assets/icons/specter.co.png",
       "founders": [
@@ -1189,10 +1302,14 @@
       "previousAgent": "Tools / data / infrastructure",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": "≤$150M",
-        "kind": "Band when picked",
-        "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "amount": "<$1M",
+        "scope": "Reported primary total",
+        "date": "2026-05",
+        "url": "https://sacra.com/c/turbopuffer/",
+        "note": "CEO-reported primary capital as of May 2026; excludes secondary share transactions.",
+        "evidenceType": "Reporting",
+        "reviewed": "2026-09-16",
+        "kind": "Reported primary total · May 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/turbopuffer.com.png",
       "founders": [
@@ -1230,10 +1347,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": "≤$150M",
-        "kind": "Band when picked",
-        "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "amount": "≈$88M",
+        "scope": "Reported total",
+        "date": "2026-06-17",
+        "url": "https://fortune.com/2026/06/17/aaru-cofounder-ned-koh-ai-startup-sales-pitch-do-not-trust-us/",
+        "note": "Fortune cites PitchBook for approximately $88M raised.",
+        "evidenceType": "Reporting",
+        "reviewed": "2026-09-16",
+        "kind": "Reported total · Jun 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/aaru.com.png",
       "founders": [
@@ -1276,10 +1397,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$225M",
+        "scope": "Round",
+        "date": "2026-06-09",
+        "url": "https://www.beaconsoftware.com/",
+        "note": "Company homepage links the June 9 funding announcement.",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Round · Jun 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/beaconsoftware.com.png",
       "founders": [
@@ -1317,10 +1442,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$500M",
+        "scope": "Reported round",
+        "date": "2026-09-09",
+        "url": "https://www.marketscreener.com/news/fab2-inc-announced-that-it-has-received-499-99703-million-in-funding-from-a-group-of-investors-ce785bdeda8ff12d",
+        "note": "S&P Capital IQ reports the completed financing; not the valuation.",
+        "evidenceType": "Reporting",
+        "reviewed": "2026-09-16",
+        "kind": "Reported round · Sep 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/fab2.com.png",
       "founders": [
@@ -1358,10 +1487,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$140M",
+        "scope": "Series D",
+        "date": "2025-12-09",
+        "url": "https://blog.fal.ai/our-series-d-scaling-fal/",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series D · Dec 2025"
       },
       "logo": "https://breakoutlist.com/assets/icons/fal.ai.png",
       "founders": [
@@ -1399,10 +1532,14 @@
       "previousAgent": "Agent products / models",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$100M",
+        "scope": "Total",
+        "date": "2026-01",
+        "url": "https://listenlabs.com/blog/announcing-listen-s-series-b",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Total · Jan 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/listenlabs.com.png",
       "founders": [
@@ -1443,7 +1580,10 @@
         "amount": "$52M",
         "kind": "Series A · Dec 2025",
         "date": "2025-12-11",
-        "url": "https://www.medra.ai/series-a"
+        "url": "https://www.medra.ai/series-a",
+        "scope": "Series A",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16"
       },
       "logo": "https://breakoutlist.com/assets/icons/medra.ai.png",
       "founders": [
@@ -1476,10 +1616,14 @@
       "previousAgent": "Agent products / models",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": "≤$150M",
-        "kind": "Band when picked",
-        "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "amount": "$27M",
+        "scope": "Series B",
+        "date": "2025-05-27",
+        "url": "https://www.generalcatalyst.com/stories/our-investment-in-pallet",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series B · May 2025"
       },
       "logo": "https://breakoutlist.com/assets/icons/pallet.com.png",
       "founders": [
@@ -1517,10 +1661,14 @@
       "previousAgent": "Agent products / models",
       "previousImprovement": "Research direction",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$300M",
+        "scope": "Seed",
+        "date": "2025-09-30",
+        "url": "https://techcrunch.com/2025/09/30/former-openai-and-deepmind-researchers-raise-whopping-300m-seed-to-automate-science/",
+        "note": "",
+        "evidenceType": "Reporting",
+        "reviewed": "2026-09-16",
+        "kind": "Seed · Sep 2025"
       },
       "logo": "https://breakoutlist.com/assets/icons/periodic.com.png",
       "founders": [
@@ -1558,10 +1706,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": "≤$150M",
-        "kind": "Band when picked",
-        "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "amount": "$40M",
+        "scope": "Reported round",
+        "date": "2025-11-26",
+        "url": "https://www.dcvc.com/companies/the-san-francisco-compute-company",
+        "note": "Investor page links the funding announcement; excludes compute sales.",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Reported round · Nov 2025"
       },
       "logo": "https://breakoutlist.com/assets/icons/sfcompute.com.png",
       "founders": [
@@ -1617,7 +1769,10 @@
         "amount": ">$200M",
         "kind": "Series B · Aug 2026",
         "date": "2026-08",
-        "url": "https://www.simile.com/blog/series-b?source=homepage"
+        "url": "https://www.simile.com/blog/series-b?source=homepage",
+        "scope": "Series B",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16"
       },
       "logo": "https://breakoutlist.com/assets/icons/simile.com.png",
       "founders": [
@@ -1665,10 +1820,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$168M",
+        "scope": "Reported total",
+        "date": "2026-07-21",
+        "url": "https://www.bizjournals.com/washington/news/2026/07/21/twenty-technologies-khosla-ventures.html",
+        "note": "Twenty Technologies, the cyberwarfare company at twenty.io.",
+        "evidenceType": "Reporting",
+        "reviewed": "2026-09-16",
+        "kind": "Reported total · Jul 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/twenty.io.png",
       "founders": [
@@ -1716,10 +1875,14 @@
       "previousAgent": "Tools / data / infrastructure",
       "previousImprovement": "Enabling tools / data",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$70M",
+        "scope": "Launch funding",
+        "date": "2026-06-17",
+        "url": "https://siliconangle.com/2026/06/17/robotic-teleoperation-data-startup-xdof-launches-70m-funding/",
+        "note": "",
+        "evidenceType": "Reporting",
+        "reviewed": "2026-09-16",
+        "kind": "Launch funding · Jun 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/xdof.ai.png",
       "founders": [
@@ -1762,10 +1925,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$300M",
+        "scope": "Series B",
+        "date": "2026-05-20",
+        "url": "https://www.prnewswire.com/news-releases/amca-closes-300m-series-b-at-1b-valuation-to-strengthen-americas-critical-component-supply-chain-302776943.html",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series B · May 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/amca.com.png",
       "founders": [
@@ -1803,10 +1970,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$470M",
+        "scope": "Series C · equity + debt",
+        "date": "2026-07-27",
+        "url": "https://www.washingtontechnology.com/companies/2026/07/antares-fetches-470m-move-military-base-reactor-push/415052/",
+        "note": "Announced financing includes $370M equity and $100M debt.",
+        "evidenceType": "Reporting",
+        "reviewed": "2026-09-16",
+        "kind": "Series C · equity + debt · Jul 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/antaresindustries.com.png",
       "founders": [
@@ -1844,10 +2015,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$110M",
+        "scope": "Series E",
+        "date": "2025-09-09",
+        "url": "https://www.aven.com/blog/aven-raises-110m-series-e/",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series E · Sep 2025"
       },
       "logo": "https://breakoutlist.com/assets/icons/aven.com.png",
       "founders": [
@@ -1900,10 +2075,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$70M",
+        "scope": "Equity round",
+        "date": "2025-02-25",
+        "url": "https://bitwiseinvestments.com/newsroom/bitwise-announces-new-70m-backing",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Equity round · Feb 2025"
       },
       "logo": "https://breakoutlist.com/assets/icons/bitwiseinvestments.com.png",
       "founders": [
@@ -1941,10 +2120,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$300M",
+        "scope": "Series B",
+        "date": "2025-12-09",
+        "url": "https://boomsupersonic.com/press-release/boom-supersonic-to-power-ai-data-centers",
+        "note": "Excludes turbine orders and backlog.",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series B · Dec 2025"
       },
       "logo": "https://breakoutlist.com/assets/icons/boomsupersonic.com.png",
       "founders": [
@@ -1987,10 +2170,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": "≤$150M",
-        "kind": "Band when picked",
-        "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "amount": "$30M",
+        "scope": "Series A",
+        "date": "2026-03-12",
+        "url": "https://brain.co/blog/introducing-brain-co-9gk9a",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series A · Mar 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/brain.co.png",
       "founders": [
@@ -2038,10 +2225,14 @@
       "previousAgent": "Tools / data / infrastructure",
       "previousImprovement": "Enabling tools / data",
       "funding": {
-        "amount": "≤$150M",
-        "kind": "Band when picked",
-        "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "amount": "$80M",
+        "scope": "Series B",
+        "date": "2026-02-17",
+        "url": "https://www.braintrust.dev/blog/announcing-series-b",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series B · Feb 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/braintrust.dev.png",
       "founders": [
@@ -2074,10 +2265,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$1B",
+        "scope": "Series C",
+        "date": "2026-08-19",
+        "url": "https://www.castelion.com/news/series-c/",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series C · Aug 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/castelion.com.png",
       "founders": [
@@ -2120,10 +2315,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": ">$100M",
+        "scope": "Series B",
+        "date": "2026-05-05",
+        "url": "https://www.getenter.ai/en/news/enter-levanta-mais-de-us-100-milhoes-e-se-torna-o-primeiro-unicornio-de-ia-da-america-latina",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series B · May 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/getenter.ai.png",
       "founders": [
@@ -2166,10 +2365,14 @@
       "previousAgent": "Tools / data / infrastructure",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$250M",
+        "scope": "Series C",
+        "date": "2026-05-20",
+        "url": "https://exa.ai/blog/announcing-series-c",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series C · May 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/exa.ai.png",
       "founders": [
@@ -2210,7 +2413,10 @@
         "amount": ">$400M",
         "kind": "Total · Sep 2026",
         "date": "2026-09-15",
-        "url": "https://factory.com/news/5-billion-valuation"
+        "url": "https://factory.com/news/5-billion-valuation",
+        "scope": "Total",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16"
       },
       "logo": "https://breakoutlist.com/assets/icons/factory.com.png",
       "founders": [
@@ -2248,10 +2454,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$220M",
+        "scope": "Round",
+        "date": "2026-05",
+        "url": "https://www.fractile.ai/news/fractile-raises-220m-to-build-the-next-generation-of-inference-hardware",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Round · May 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/fractile.ai.png",
       "founders": [
@@ -2284,10 +2494,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$400M",
+        "scope": "Series B",
+        "date": "2026-08-17",
+        "url": "https://www.prnewswire.com/news-releases/higgsfield-raises-400-million-series-b-financing-at-5-4-billion-valuation-with-annualized-revenue-reaching-700-million-302852430.html",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series B · Aug 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/higgsfield.ai.png",
       "founders": [
@@ -2330,10 +2544,14 @@
       "previousAgent": "Tools / data / infrastructure",
       "previousImprovement": "Enabling tools / data",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$355M",
+        "scope": "Series C",
+        "date": "2026-05-21",
+        "url": "https://modal.com/blog/modal-series-c",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series C · May 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/modal.com.png",
       "founders": [
@@ -2371,10 +2589,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$250M",
+        "scope": "Reported Series C",
+        "date": "2026-08",
+        "url": "https://www.latimes.com/b2b/space-tech/story/2026-08-31/neros-technologies-250m-series-c-funding",
+        "note": "",
+        "evidenceType": "Reporting",
+        "reviewed": "2026-09-16",
+        "kind": "Reported Series C · Aug 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/neros.tech.png",
       "founders": [
@@ -2412,10 +2634,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$80M",
+        "scope": "Series B extension",
+        "date": "2026-03-05",
+        "url": "https://nominal.io/blog/series-b2",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series B extension · Mar 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/nominal.io.png",
       "founders": [
@@ -2458,10 +2684,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$312M",
+        "scope": "Series B",
+        "date": "2026-08-03",
+        "url": "https://olix.com/news/company-raises-series-b",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series B · Aug 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/olix.com.png",
       "founders": [
@@ -2494,10 +2724,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$250M",
+        "scope": "Reported Series D",
+        "date": "2026-01-21",
+        "url": "https://www.statnews.com/2026/01/21/health-ai-starutup-openevidence-raises-250-million/",
+        "note": "Round amount used because reported cumulative totals differ.",
+        "evidenceType": "Reporting",
+        "reviewed": "2026-09-16",
+        "kind": "Reported Series D · Jan 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/openevidence.com.png",
       "founders": [
@@ -2535,10 +2769,14 @@
       "previousAgent": "Agent products / models",
       "previousImprovement": "Explicit learning / adaptation",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$2.12B",
+        "scope": "Database total",
+        "date": "2026-05-21",
+        "url": "https://forgeglobal.com/physical-intelligence_stock/",
+        "note": "Forge reports total funding across rounds through May 2026; third-party total, not company-confirmed.",
+        "evidenceType": "Database",
+        "reviewed": "2026-09-16",
+        "kind": "Database total · May 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/physicalintelligence.company.png",
       "founders": [
@@ -2601,10 +2839,14 @@
       "previousAgent": "Agent products / models",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": ">$300M",
+        "scope": "Total",
+        "date": "2026-04-29",
+        "url": "https://www.prnewswire.com/news-releases/rogo-raises-160m-series-d-to-scale-the-agentic-platform-for-finance-302756546.html",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Total · Apr 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/rogo.ai.png",
       "founders": [
@@ -2647,10 +2889,14 @@
       "previousAgent": "Agent products / models",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$50M",
+        "scope": "Reported total",
+        "date": "2024-11-19",
+        "url": "https://www.bloomberg.com/news/articles/2024-11-19/sequoia-gv-back-startup-building-ai-agents-for-salespeople",
+        "note": "Seed and Series A combined. A later round was reported without a disclosed amount.",
+        "evidenceType": "Reporting",
+        "reviewed": "2026-09-16",
+        "kind": "Reported total · Nov 2024"
       },
       "logo": "https://breakoutlist.com/assets/icons/rox.com.png",
       "founders": [
@@ -2706,7 +2952,10 @@
         "amount": "$127M",
         "kind": "Total · Dec 2025",
         "date": "2025-12",
-        "url": "https://www.serval.com/serval-news/serval%E2%80%99s-next-chapter-raising-75m-to-build-the-new-era-of-enterprise-automation-and-service-management"
+        "url": "https://www.serval.com/serval-news/serval%E2%80%99s-next-chapter-raising-75m-to-build-the-new-era-of-enterprise-automation-and-service-management",
+        "scope": "Total",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16"
       },
       "logo": "https://breakoutlist.com/assets/icons/serval.com.png",
       "founders": [
@@ -2744,10 +2993,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": "≤$150M",
-        "kind": "Band when picked",
-        "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "amount": "$125M",
+        "scope": "Total",
+        "date": "2026-05-20",
+        "url": "https://www.socket.dev/blog/series-c",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Total · May 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/socket.dev.png",
       "founders": [
@@ -2780,10 +3033,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": "≤$150M",
-        "kind": "Band when picked",
-        "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "amount": "$70M",
+        "scope": "Total",
+        "date": "2026-07-14",
+        "url": "https://www.prnewswire.com/news-releases/state-affairs-raises-70-million-to-help-institutions-navigate-the-policy-and-regulatory-economy-302824501.html",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Total · Jul 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/stateaffairs.com.png",
       "founders": [
@@ -2821,10 +3078,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$1B",
+        "scope": "Series B",
+        "date": "2026-08-03",
+        "url": "https://www.valaratomics.com/docs/Announcing-our-1B-Series-B-Led-By-Sequoia",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series B · Aug 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/valaratomics.com.png",
       "founders": [
@@ -2857,10 +3118,14 @@
       "previousAgent": "Tools / data / infrastructure",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": "≤$150M",
-        "kind": "Band when picked",
-        "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "amount": "$72M",
+        "scope": "Total",
+        "date": "2026-05-12",
+        "url": "https://www.globenewswire.com/news-release/2026/05/12/3292882/0/en/vapi-raises-50m-series-b-as-it-reaches-1-billion-calls-powering-the-next-generation-of-enterprise-voice-ai.html",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Total · May 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/vapi.ai.png",
       "founders": [
@@ -2898,10 +3163,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": "≤$150M",
-        "kind": "Band when picked",
-        "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "amount": "$109.4M",
+        "scope": "Database total",
+        "date": "2025-06-10",
+        "url": "https://forgeglobal.com/verse-medical_stock/",
+        "note": "Forge reports $109.43M across rounds through June 2025; third-party total, not company-confirmed.",
+        "evidenceType": "Database",
+        "reviewed": "2026-09-16",
+        "kind": "Database total · Jun 2025"
       },
       "logo": "https://breakoutlist.com/assets/icons/versemedical.com.png",
       "founders": [
@@ -2934,10 +3203,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$100M",
+        "scope": "Series C",
+        "date": "2026-03-02",
+        "url": "https://workos.com/blog/series-c",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series C · Mar 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/workos.com.png",
       "founders": [
@@ -2970,10 +3243,14 @@
       "previousAgent": "Agent products / models",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$155M",
+        "scope": "Series C incl. extension",
+        "date": "2026-05-06",
+        "url": "https://xbow.com/news/xbow-secures-additional-35m-from-strategic-investors",
+        "note": "$120M initial Series C plus $35M extension; not lifetime funding.",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series C incl. extension · May 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/xbow.com.png",
       "founders": [
@@ -3006,10 +3283,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": "≤$150M",
-        "kind": "Band when picked",
-        "date": "2026-09",
-        "url": "https://breakoutlist.com/#u"
+        "amount": "$36M",
+        "scope": "Database total",
+        "date": "2026-04-27",
+        "url": "https://forgeglobal.com/arcana_stock/",
+        "note": "Forge reports $36.03M across rounds through April 2026; third-party total, not company-confirmed.",
+        "evidenceType": "Database",
+        "reviewed": "2026-09-16",
+        "kind": "Database total · Apr 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/arcana.io.png",
       "founders": [
@@ -3047,10 +3328,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$1B",
+        "scope": "Series D",
+        "date": "2026-08-03",
+        "url": "https://markets.financialcontent.com/buffnews/article/bizwire-2026-8-3-base-power-announces-1b-series-d-and-launches-base-core-first-of-its-kind-home-battery-built-in-the-united-states",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series D · Aug 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/basepowercompany.com.png",
       "founders": [
@@ -3088,10 +3373,14 @@
       "previousAgent": "Tools / data / infrastructure",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$1.5B",
+        "scope": "Series F",
+        "date": "2026-06-22",
+        "url": "https://www.baseten.co/blog/announcing-our-series-f/",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series F · Jun 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/baseten.co.png",
       "founders": [
@@ -3139,10 +3428,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$300M",
+        "scope": "Reported Series C",
+        "date": "2026-08-10",
+        "url": "https://www.unmannedairspace.info/counter-uas-systems-and-policies/cambridge-aerospace-raises-usd-300m-for-interceptor-development-and-expansion/",
+        "note": "",
+        "evidenceType": "Reporting",
+        "reviewed": "2026-09-16",
+        "kind": "Reported Series C · Aug 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/cambridgeaerospace.com.png",
       "founders": [
@@ -3188,7 +3481,10 @@
         "amount": ">$2B",
         "kind": "Series E · Sep 2026",
         "date": "2026-09-08",
-        "url": "https://cognition.com/blog/series-e"
+        "url": "https://cognition.com/blog/series-e",
+        "scope": "Series E",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16"
       },
       "logo": "https://breakoutlist.com/assets/icons/cognition.ai.png",
       "founders": [
@@ -3231,10 +3527,14 @@
       "previousAgent": "Agent products / models",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$781M",
+        "scope": "Total",
+        "date": "2026-02-04",
+        "url": "https://elevenlabs.io/blog/series-d",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Total · Feb 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/elevenlabs.io.png",
       "founders": [
@@ -3272,10 +3572,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$1.9B",
+        "scope": "Total",
+        "date": "2026-08-18",
+        "url": "https://www.globenewswire.com/news-release/2026/08/18/3347095/0/en/etched-raises-700m-at-a-21b-valuation-and-completes-first-customer-delivery-to-jane-street.html",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Total · Aug 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/etched.com.png",
       "founders": [
@@ -3318,10 +3622,14 @@
       "previousAgent": "Tools / data / infrastructure",
       "previousImprovement": "Enabling tools / data",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$1.505B",
+        "scope": "Series D",
+        "date": "2026-07-15",
+        "url": "https://fireworks.ai/blog/series-d-announcement",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series D · Jul 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/fireworks.ai.png",
       "founders": [
@@ -3379,10 +3687,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": ">$2.6B",
+        "scope": "Reported total",
+        "date": "2026-09-04",
+        "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-crusoe-fluidstack-multibillion-dollar-ai-infrastructure/",
+        "note": "Publication date; excludes data-center contracts and capacity commitments.",
+        "evidenceType": "Reporting",
+        "reviewed": "2026-09-16",
+        "kind": "Reported total · Sep 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/fluidstack.io.png",
       "founders": [
@@ -3430,10 +3742,14 @@
       "previousAgent": "Tools / data / infrastructure",
       "previousImprovement": "Enabling tools / data",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
+        "amount": "≈$435M",
+        "scope": "Reported total",
         "date": null,
-        "url": null
+        "url": "https://sacra.com/c/handshake/",
+        "note": "Research source reports approximate total funding; no single round date applies.",
+        "evidenceType": "Reporting",
+        "reviewed": "2026-09-16",
+        "kind": "Reported total"
       },
       "logo": "https://breakoutlist.com/assets/icons/joinhandshake.com.png",
       "founders": [
@@ -3476,10 +3792,14 @@
       "previousAgent": "Agent products / models",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$550M",
+        "scope": "Round",
+        "date": "2026-09-09",
+        "url": "https://www.harvey.ai/blog/harvey-raises-dollar550m-at-a-dollar155b-valuation-to-help-legal-teams-own-their-intelligence",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Round · Sep 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/harvey.ai.png",
       "founders": [
@@ -3517,10 +3837,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$1.12B",
+        "scope": "SEC offering sold",
+        "date": "2026-08-25",
+        "url": "https://www.sec.gov/Archives/edgar/data/1806928/000123191926001066/xslFormDX01/primary_doc.xml",
+        "note": "Filed amount sold: $1,120,010,122. The $1.5B offering target is not treated as money raised.",
+        "evidenceType": "Filing",
+        "reviewed": "2026-09-16",
+        "kind": "SEC offering sold · Aug 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/kalshi.com.png",
       "founders": [
@@ -3558,10 +3882,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$800M",
+        "scope": "Two tranches",
+        "date": "2025-11",
+        "url": "https://blog.kraken.com/news/800-million-raise-to-advance-strategic-roadmap",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Two tranches · Nov 2025"
       },
       "logo": "https://breakoutlist.com/assets/icons/kraken.com.png",
       "founders": [
@@ -3607,7 +3935,10 @@
         "amount": "$400M",
         "kind": "Series C · Aug 2026",
         "date": "2026-08-12",
-        "url": "https://lovable.dev/blog/series-c"
+        "url": "https://lovable.dev/blog/series-c",
+        "scope": "Series C",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16"
       },
       "logo": "https://breakoutlist.com/assets/icons/lovable.dev.png",
       "founders": [
@@ -3645,10 +3976,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$300M",
+        "scope": "Series C",
+        "date": "2026-06-02",
+        "url": "https://machindustries.com/articles/mach-industries-raises-300-million-in-series-c-funding",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series C · Jun 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/machindustries.com.png",
       "founders": [
@@ -3681,10 +4016,14 @@
       "previousAgent": "Tools / data / infrastructure",
       "previousImprovement": "Enabling tools / data",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$350M",
+        "scope": "Series C",
+        "date": "2025-10-27",
+        "url": "https://www.mercor.com/blog/series-c/",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series C · Oct 2025"
       },
       "logo": "https://breakoutlist.com/assets/icons/mercor.com.png",
       "founders": [
@@ -3727,10 +4066,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$240M",
+        "scope": "Series D",
+        "date": "2026-08-28",
+        "url": "https://www.owner.com/d",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series D · Aug 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/owner.com.png",
       "founders": [
@@ -3768,10 +4111,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": ">$300M",
+        "scope": "Series D",
+        "date": "2025-12-17",
+        "url": "https://www.radiantnuclear.com/news/series-d-announcement",
+        "note": "Later strategic investment disclosed in February 2026 without a new amount.",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series D · Dec 2025"
       },
       "logo": "https://breakoutlist.com/assets/icons/radiantnuclear.com.png",
       "founders": [
@@ -3809,10 +4156,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$750M",
+        "scope": "Series F",
+        "date": "2026-06-04",
+        "url": "https://www.prnewswire.com/news-releases/ramp-raises-series-f-at-44-billion-valuation-302791103.html",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series F · Jun 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/ramp.com.png",
       "founders": [
@@ -3855,10 +4206,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$1.75B",
+        "scope": "Series D",
+        "date": "2026-03-31",
+        "url": "https://finance.yahoo.com/sectors/technology/articles/saronic-closes-1-75b-series-090000785.html",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Series D · Mar 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/saronic.com.png",
       "founders": [
@@ -3906,10 +4261,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "$2.3B",
+        "scope": "Total",
+        "date": "2026-09-08",
+        "url": "https://www.stokespace.com/news/stoke-space-series-e",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Total · Sep 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/stokespace.com.png",
       "founders": [
@@ -3947,10 +4306,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": ">$700M",
+        "scope": "Total",
+        "date": "2025-02-19",
+        "url": "https://www.verkada.com/au/blog/verkada-raises-200m-in-funding/",
+        "note": "",
+        "evidenceType": "Company / investor announcement",
+        "reviewed": "2026-09-16",
+        "kind": "Total · Feb 2025"
       },
       "logo": "https://breakoutlist.com/assets/icons/verkada.com.png",
       "founders": [
@@ -3998,10 +4361,14 @@
       "previousAgent": "Not established in this screen",
       "previousImprovement": "Not established in this screen",
       "funding": {
-        "amount": null,
-        "kind": "Not verified",
-        "date": null,
-        "url": null
+        "amount": "≈$272M",
+        "scope": "Reported total",
+        "date": "2026-04-10",
+        "url": "https://www.forbes.com/sites/boazsobrado/2026/04/10/one-stop-whop-the-gen-z-platform-that-wants-to-be-your-bank-broker-and-business/",
+        "note": "",
+        "evidenceType": "Reporting",
+        "reviewed": "2026-09-16",
+        "kind": "Reported total · Apr 2026"
       },
       "logo": "https://breakoutlist.com/assets/icons/whop.com.png",
       "founders": [
@@ -4023,5 +4390,6 @@
       ],
       "profileSource": "https://breakoutlist.com/"
     }
-  ]
+  ],
+  "fundingMethodology": "Company and investor announcements, regulatory filings, reporting and private-market databases. Prefer explicit cumulative totals; otherwise show a dated round or offering amount sold. Source type and scope are retained for each record. Historical selection bands are not current totals; no amount means unknown, not zero. These mixed scopes must not be summed or ranked as comparable lifetime funding."
 }
